@@ -1,0 +1,314 @@
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\WinUI.exe
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\WinUI.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\BLL.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DAL.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllChart.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllCore.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\iFormControls.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Data.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Design.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\System.Xml.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\office.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\office.xml
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.exe
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\obj\Debug\WinUI.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.exe
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.exe
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\BLL.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DAL.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllChart.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllCore.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\iFormControls.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Design.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Xml.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.xml
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.exe
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\BLL.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DAL.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllChart.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllCore.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\iFormControls.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Design.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Xml.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.xml
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.exe
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.exe
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\WinUI.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\BLL.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DAL.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllChart.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllCore.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\iFormControls.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Design.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\System.Xml.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Vbe.Interop.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\stdole.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DAL.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\office.xml
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csprojAssemblyReference.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\FM004-WinUI.csproj.CopyComplete
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.exe
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\obj\Debug\WinUI.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.exe
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\BLL.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DAL.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllChart.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllCore.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\iFormControls.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Design.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Xml.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DAL.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csprojResolveAssemblyReference.cache
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.exe
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.exe
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\BLL.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DAL.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllChart.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllCore.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\iFormControls.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Design.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Xml.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DAL.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.exe
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csprojResolveAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.exe
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\BLL.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DevComponents.DotNetBar2.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.exe.config
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL010-dllEncrypt.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DL011-dllCommon.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllChart.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConfigApp.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllConvertBase64.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllCore.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogDataBase.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllEventLogFile.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllExcelImportAndExport.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllImportDataFromExcel.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllPTLControlLib.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dllUcShowWnDThread.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\dotnetCHARTING.WinForms.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\ICSharpCode.SharpZipLib.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\iFormControls.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\LogRichBox.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\NPOI.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\NPOI.OOXML.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\NPOI.OpenXml4Net.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\NPOI.OpenXmlFormats.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\ocxLoginFrm.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\RYB_PTL_API.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.DataSetExtensions.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Data.OracleClient.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Design.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.Design.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Drawing.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Windows.Forms.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\System.Xml.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.RegisterFrm.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.exe
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\WinUI.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\WinUI.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\MySql.Data.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csprojAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csproj.CoreCompileInputs.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\obj\Debug\FM004-WinUI.csproj.CopyComplete
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\Microsoft.Office.Interop.Excel.xml

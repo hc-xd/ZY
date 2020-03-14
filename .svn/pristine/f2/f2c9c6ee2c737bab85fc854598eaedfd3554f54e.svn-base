@@ -1,0 +1,373 @@
+﻿namespace NFrmSetDPS
+{
+    partial class DFrmSetDPS
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DFrmSetDPS));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnOperationModel = new DevComponents.DotNetBar.ButtonX();
+            this.rbtByRegion = new System.Windows.Forms.RadioButton();
+            this.rbtByOrder = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnLightModel = new DevComponents.DotNetBar.ButtonX();
+            this.rbtPressOffOnce = new System.Windows.Forms.RadioButton();
+            this.rbtTurnDownOnebyOne = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbtDisplayLocator = new System.Windows.Forms.CheckBox();
+            this.rbtAllowPending = new System.Windows.Forms.CheckBox();
+            this.rbtAllowAddBox = new System.Windows.Forms.CheckBox();
+            this.btnSpecialSetting = new DevComponents.DotNetBar.ButtonX();
+            this.tBoxPendingBarcode = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.txtBox_Path = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.btnSaveSQL = new DevComponents.DotNetBar.ButtonX();
+            this.btnLoad = new DevComponents.DotNetBar.ButtonX();
+            this.richTxtBox_SQL = new System.Windows.Forms.RichTextBox();
+            this.btnReturn = new DevComponents.DotNetBar.ButtonX();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnOperationModel);
+            this.groupBox1.Controls.Add(this.rbtByRegion);
+            this.groupBox1.Controls.Add(this.rbtByOrder);
+            this.groupBox1.Location = new System.Drawing.Point(1, 10);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(985, 59);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "作业模式选择";
+            // 
+            // btnOperationModel
+            // 
+            this.btnOperationModel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnOperationModel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnOperationModel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnOperationModel.Location = new System.Drawing.Point(850, 13);
+            this.btnOperationModel.Name = "btnOperationModel";
+            this.btnOperationModel.Size = new System.Drawing.Size(129, 40);
+            this.btnOperationModel.TabIndex = 7;
+            this.btnOperationModel.Text = "保存";
+            this.btnOperationModel.Click += new System.EventHandler(this.btnOperationModel_Click);
+            // 
+            // rbtByRegion
+            // 
+            this.rbtByRegion.AutoSize = true;
+            this.rbtByRegion.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtByRegion.Location = new System.Drawing.Point(187, 25);
+            this.rbtByRegion.Name = "rbtByRegion";
+            this.rbtByRegion.Size = new System.Drawing.Size(109, 18);
+            this.rbtByRegion.TabIndex = 1;
+            this.rbtByRegion.TabStop = true;
+            this.rbtByRegion.Text = "分区拣选模式";
+            this.rbtByRegion.UseVisualStyleBackColor = true;
+            // 
+            // rbtByOrder
+            // 
+            this.rbtByOrder.AutoSize = true;
+            this.rbtByOrder.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtByOrder.Location = new System.Drawing.Point(22, 25);
+            this.rbtByOrder.Name = "rbtByOrder";
+            this.rbtByOrder.Size = new System.Drawing.Size(109, 18);
+            this.rbtByOrder.TabIndex = 0;
+            this.rbtByOrder.TabStop = true;
+            this.rbtByOrder.Text = "逐单拣选模式";
+            this.rbtByOrder.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnLightModel);
+            this.groupBox2.Controls.Add(this.rbtPressOffOnce);
+            this.groupBox2.Controls.Add(this.rbtTurnDownOnebyOne);
+            this.groupBox2.Location = new System.Drawing.Point(2, 72);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(984, 57);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "亮灯模式选择";
+            // 
+            // btnLightModel
+            // 
+            this.btnLightModel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLightModel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnLightModel.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnLightModel.Location = new System.Drawing.Point(850, 11);
+            this.btnLightModel.Name = "btnLightModel";
+            this.btnLightModel.Size = new System.Drawing.Size(129, 40);
+            this.btnLightModel.TabIndex = 8;
+            this.btnLightModel.Text = "保存";
+            this.btnLightModel.Click += new System.EventHandler(this.btnLightModel_Click);
+            // 
+            // rbtPressOffOnce
+            // 
+            this.rbtPressOffOnce.AutoSize = true;
+            this.rbtPressOffOnce.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtPressOffOnce.Location = new System.Drawing.Point(187, 21);
+            this.rbtPressOffOnce.Name = "rbtPressOffOnce";
+            this.rbtPressOffOnce.Size = new System.Drawing.Size(109, 18);
+            this.rbtPressOffOnce.TabIndex = 1;
+            this.rbtPressOffOnce.TabStop = true;
+            this.rbtPressOffOnce.Text = "一次拍灯即灭";
+            this.rbtPressOffOnce.UseVisualStyleBackColor = true;
+            // 
+            // rbtTurnDownOnebyOne
+            // 
+            this.rbtTurnDownOnebyOne.AutoSize = true;
+            this.rbtTurnDownOnebyOne.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtTurnDownOnebyOne.Location = new System.Drawing.Point(22, 21);
+            this.rbtTurnDownOnebyOne.Name = "rbtTurnDownOnebyOne";
+            this.rbtTurnDownOnebyOne.Size = new System.Drawing.Size(137, 18);
+            this.rbtTurnDownOnebyOne.TabIndex = 0;
+            this.rbtTurnDownOnebyOne.TabStop = true;
+            this.rbtTurnDownOnebyOne.Text = "拍灭数量递减模式";
+            this.rbtTurnDownOnebyOne.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rbtDisplayLocator);
+            this.groupBox4.Controls.Add(this.rbtAllowPending);
+            this.groupBox4.Controls.Add(this.rbtAllowAddBox);
+            this.groupBox4.Controls.Add(this.btnSpecialSetting);
+            this.groupBox4.Controls.Add(this.tBoxPendingBarcode);
+            this.groupBox4.Location = new System.Drawing.Point(2, 135);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(984, 64);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "特殊功能设置";
+            // 
+            // rbtDisplayLocator
+            // 
+            this.rbtDisplayLocator.AutoSize = true;
+            this.rbtDisplayLocator.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtDisplayLocator.Location = new System.Drawing.Point(565, 30);
+            this.rbtDisplayLocator.Name = "rbtDisplayLocator";
+            this.rbtDisplayLocator.Size = new System.Drawing.Size(145, 18);
+            this.rbtDisplayLocator.TabIndex = 13;
+            this.rbtDisplayLocator.Text = "是否显示货位前2位";
+            this.rbtDisplayLocator.UseVisualStyleBackColor = true;
+            // 
+            // rbtAllowPending
+            // 
+            this.rbtAllowPending.AutoSize = true;
+            this.rbtAllowPending.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtAllowPending.Location = new System.Drawing.Point(185, 30);
+            this.rbtAllowPending.Name = "rbtAllowPending";
+            this.rbtAllowPending.Size = new System.Drawing.Size(138, 18);
+            this.rbtAllowPending.TabIndex = 12;
+            this.rbtAllowPending.Text = "是否允许挂起任务";
+            this.rbtAllowPending.UseVisualStyleBackColor = true;
+            // 
+            // rbtAllowAddBox
+            // 
+            this.rbtAllowAddBox.AutoSize = true;
+            this.rbtAllowAddBox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rbtAllowAddBox.Location = new System.Drawing.Point(20, 30);
+            this.rbtAllowAddBox.Name = "rbtAllowAddBox";
+            this.rbtAllowAddBox.Size = new System.Drawing.Size(110, 18);
+            this.rbtAllowAddBox.TabIndex = 11;
+            this.rbtAllowAddBox.Text = "是否允许加箱";
+            this.rbtAllowAddBox.UseVisualStyleBackColor = true;
+            // 
+            // btnSpecialSetting
+            // 
+            this.btnSpecialSetting.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSpecialSetting.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSpecialSetting.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSpecialSetting.Location = new System.Drawing.Point(850, 13);
+            this.btnSpecialSetting.Name = "btnSpecialSetting";
+            this.btnSpecialSetting.Size = new System.Drawing.Size(129, 40);
+            this.btnSpecialSetting.TabIndex = 9;
+            this.btnSpecialSetting.Text = "保存";
+            this.btnSpecialSetting.Click += new System.EventHandler(this.btnSpecialSetting_Click);
+            // 
+            // tBoxPendingBarcode
+            // 
+            // 
+            // 
+            // 
+            this.tBoxPendingBarcode.Border.Class = "TextBoxBorder";
+            this.tBoxPendingBarcode.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tBoxPendingBarcode.ForeColor = System.Drawing.Color.Blue;
+            this.tBoxPendingBarcode.Location = new System.Drawing.Point(337, 25);
+            this.tBoxPendingBarcode.Name = "tBoxPendingBarcode";
+            this.tBoxPendingBarcode.Size = new System.Drawing.Size(206, 27);
+            this.tBoxPendingBarcode.TabIndex = 2;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.labelX1);
+            this.groupBox3.Controls.Add(this.txtBox_Path);
+            this.groupBox3.Controls.Add(this.btnSaveSQL);
+            this.groupBox3.Controls.Add(this.btnLoad);
+            this.groupBox3.Controls.Add(this.richTxtBox_SQL);
+            this.groupBox3.Location = new System.Drawing.Point(2, 200);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(984, 252);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            // 
+            // labelX1
+            // 
+            this.labelX1.Location = new System.Drawing.Point(15, 215);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(65, 23);
+            this.labelX1.TabIndex = 17;
+            this.labelX1.Text = "文件路径:";
+            // 
+            // txtBox_Path
+            // 
+            // 
+            // 
+            // 
+            this.txtBox_Path.Border.Class = "TextBoxBorder";
+            this.txtBox_Path.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtBox_Path.Location = new System.Drawing.Point(86, 206);
+            this.txtBox_Path.Name = "txtBox_Path";
+            this.txtBox_Path.Size = new System.Drawing.Size(606, 31);
+            this.txtBox_Path.TabIndex = 16;
+            // 
+            // btnSaveSQL
+            // 
+            this.btnSaveSQL.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSaveSQL.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSaveSQL.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSaveSQL.Location = new System.Drawing.Point(848, 206);
+            this.btnSaveSQL.Name = "btnSaveSQL";
+            this.btnSaveSQL.Size = new System.Drawing.Size(129, 40);
+            this.btnSaveSQL.TabIndex = 15;
+            this.btnSaveSQL.Text = "保存";
+            this.btnSaveSQL.Click += new System.EventHandler(this.btnSaveSQL_Click);
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLoad.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnLoad.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnLoad.Location = new System.Drawing.Point(698, 206);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(129, 40);
+            this.btnLoad.TabIndex = 14;
+            this.btnLoad.Text = "加载SQL语句";
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // richTxtBox_SQL
+            // 
+            this.richTxtBox_SQL.Location = new System.Drawing.Point(10, 13);
+            this.richTxtBox_SQL.Name = "richTxtBox_SQL";
+            this.richTxtBox_SQL.Size = new System.Drawing.Size(968, 187);
+            this.richTxtBox_SQL.TabIndex = 13;
+            this.richTxtBox_SQL.Text = "";
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReturn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReturn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnReturn.Location = new System.Drawing.Point(850, 458);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(129, 40);
+            this.btnReturn.TabIndex = 13;
+            this.btnReturn.Text = "返回";
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(970, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 12);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "1.0";
+            // 
+            // DFrmSetDPS
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(998, 510);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "DFrmSetDPS";
+            this.Text = "[UI]-[DPS拣货设置参数]";
+            this.Load += new System.EventHandler(this.FrmSetDPS_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox groupBox1;
+        private DevComponents.DotNetBar.ButtonX btnOperationModel;
+        private System.Windows.Forms.RadioButton rbtByRegion;
+        private System.Windows.Forms.RadioButton rbtByOrder;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private DevComponents.DotNetBar.ButtonX btnLightModel;
+        private System.Windows.Forms.RadioButton rbtPressOffOnce;
+        private System.Windows.Forms.RadioButton rbtTurnDownOnebyOne;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.CheckBox rbtDisplayLocator;
+        private System.Windows.Forms.CheckBox rbtAllowPending;
+        private System.Windows.Forms.CheckBox rbtAllowAddBox;
+        private DevComponents.DotNetBar.ButtonX btnSpecialSetting;
+        private DevComponents.DotNetBar.Controls.TextBoxX tBoxPendingBarcode;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtBox_Path;
+        private DevComponents.DotNetBar.ButtonX btnSaveSQL;
+        private DevComponents.DotNetBar.ButtonX btnLoad;
+        private System.Windows.Forms.RichTextBox richTxtBox_SQL;
+        private DevComponents.DotNetBar.ButtonX btnReturn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+    }
+}
+

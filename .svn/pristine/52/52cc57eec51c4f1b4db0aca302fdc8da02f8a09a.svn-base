@@ -1,0 +1,282 @@
+﻿namespace NFrmImportDPSList
+{
+    partial class DFrmImportDPSList
+    {
+        /// <summary>
+        /// 必需的设计器变量。
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 清理所有正在使用的资源。
+        /// </summary>
+        /// <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows 窗体设计器生成的代码
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要
+        /// 使用代码编辑器修改此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DFrmImportDPSList));
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnSelectFileDPS = new DevComponents.DotNetBar.ButtonX();
+            this.txtBoxFileDPS = new System.Windows.Forms.TextBox();
+            this.dataGridViewXDPS = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblFail = new DevComponents.DotNetBar.LabelX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.lblPass = new DevComponents.DotNetBar.LabelX();
+            this.lblOK = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.lblTotal = new DevComponents.DotNetBar.LabelX();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnExportPickOrder = new DevComponents.DotNetBar.ButtonX();
+            this.btnImportDPS = new DevComponents.DotNetBar.ButtonX();
+            this.btnReturn = new DevComponents.DotNetBar.ButtonX();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXDPS)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.btnSelectFileDPS);
+            this.groupBox6.Controls.Add(this.txtBoxFileDPS);
+            this.groupBox6.Location = new System.Drawing.Point(1, 14);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(996, 60);
+            this.groupBox6.TabIndex = 3;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "选择:拣料任务清单表Excel";
+            // 
+            // btnSelectFileDPS
+            // 
+            this.btnSelectFileDPS.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSelectFileDPS.ColorTable = DevComponents.DotNetBar.eButtonColor.Office2007WithBackground;
+            this.btnSelectFileDPS.Location = new System.Drawing.Point(884, 12);
+            this.btnSelectFileDPS.Name = "btnSelectFileDPS";
+            this.btnSelectFileDPS.Size = new System.Drawing.Size(95, 38);
+            this.btnSelectFileDPS.TabIndex = 9;
+            this.btnSelectFileDPS.Text = "...";
+            this.btnSelectFileDPS.Click += new System.EventHandler(this.btnSelectFileDPS_Click);
+            // 
+            // txtBoxFileDPS
+            // 
+            this.txtBoxFileDPS.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtBoxFileDPS.Location = new System.Drawing.Point(11, 21);
+            this.txtBoxFileDPS.Name = "txtBoxFileDPS";
+            this.txtBoxFileDPS.Size = new System.Drawing.Size(867, 23);
+            this.txtBoxFileDPS.TabIndex = 1;
+            // 
+            // dataGridViewXDPS
+            // 
+            this.dataGridViewXDPS.AllowUserToAddRows = false;
+            this.dataGridViewXDPS.AllowUserToDeleteRows = false;
+            this.dataGridViewXDPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewXDPS.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewXDPS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewXDPS.Location = new System.Drawing.Point(11, 20);
+            this.dataGridViewXDPS.Name = "dataGridViewXDPS";
+            this.dataGridViewXDPS.RowTemplate.Height = 23;
+            this.dataGridViewXDPS.Size = new System.Drawing.Size(969, 326);
+            this.dataGridViewXDPS.TabIndex = 4;
+            this.dataGridViewXDPS.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridViewXDPS_RowPostPaint);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridViewXDPS);
+            this.groupBox1.Location = new System.Drawing.Point(1, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(986, 356);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            // 
+            // lblFail
+            // 
+            this.lblFail.Font = new System.Drawing.Font("新宋体", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblFail.ForeColor = System.Drawing.Color.Red;
+            this.lblFail.Location = new System.Drawing.Point(246, 14);
+            this.lblFail.Name = "lblFail";
+            this.lblFail.Size = new System.Drawing.Size(49, 23);
+            this.lblFail.TabIndex = 19;
+            this.lblFail.Text = "0";
+            // 
+            // labelX5
+            // 
+            this.labelX5.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX5.Location = new System.Drawing.Point(201, 14);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(39, 23);
+            this.labelX5.TabIndex = 18;
+            this.labelX5.Text = "失败:";
+            // 
+            // lblPass
+            // 
+            this.lblPass.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblPass.Location = new System.Drawing.Point(114, 14);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(39, 23);
+            this.lblPass.TabIndex = 16;
+            this.lblPass.Text = "成功:";
+            // 
+            // lblOK
+            // 
+            this.lblOK.Font = new System.Drawing.Font("新宋体", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblOK.Location = new System.Drawing.Point(159, 14);
+            this.lblOK.Name = "lblOK";
+            this.lblOK.Size = new System.Drawing.Size(49, 23);
+            this.lblOK.TabIndex = 17;
+            this.lblOK.Text = "0";
+            // 
+            // labelX2
+            // 
+            this.labelX2.Font = new System.Drawing.Font("新宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelX2.Location = new System.Drawing.Point(8, 14);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(39, 23);
+            this.labelX2.TabIndex = 14;
+            this.labelX2.Text = "总计:";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.Font = new System.Drawing.Font("新宋体", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblTotal.Location = new System.Drawing.Point(53, 14);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(49, 23);
+            this.lblTotal.TabIndex = 15;
+            this.lblTotal.Text = "0";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.labelX5);
+            this.groupBox2.Controls.Add(this.lblFail);
+            this.groupBox2.Controls.Add(this.lblTotal);
+            this.groupBox2.Controls.Add(this.labelX2);
+            this.groupBox2.Controls.Add(this.lblPass);
+            this.groupBox2.Controls.Add(this.lblOK);
+            this.groupBox2.Location = new System.Drawing.Point(1, 442);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(309, 42);
+            this.groupBox2.TabIndex = 20;
+            this.groupBox2.TabStop = false;
+            // 
+            // btnExportPickOrder
+            // 
+            this.btnExportPickOrder.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnExportPickOrder.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnExportPickOrder.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnExportPickOrder.Location = new System.Drawing.Point(683, 448);
+            this.btnExportPickOrder.Name = "btnExportPickOrder";
+            this.btnExportPickOrder.Size = new System.Drawing.Size(151, 50);
+            this.btnExportPickOrder.TabIndex = 23;
+            this.btnExportPickOrder.Text = "导出拣料单数据";
+            this.btnExportPickOrder.Click += new System.EventHandler(this.btnExportPickOrder_Click);
+            // 
+            // btnImportDPS
+            // 
+            this.btnImportDPS.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnImportDPS.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnImportDPS.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnImportDPS.Location = new System.Drawing.Point(539, 448);
+            this.btnImportDPS.Name = "btnImportDPS";
+            this.btnImportDPS.Size = new System.Drawing.Size(129, 50);
+            this.btnImportDPS.TabIndex = 22;
+            this.btnImportDPS.Text = "一键式导入数据";
+            this.btnImportDPS.Click += new System.EventHandler(this.btnImportDPS_Click);
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnReturn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnReturn.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnReturn.Location = new System.Drawing.Point(849, 448);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(131, 50);
+            this.btnReturn.TabIndex = 24;
+            this.btnReturn.Text = "返回";
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(970, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(26, 12);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "1.0";
+            // 
+            // DFrmImportDPSList
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(998, 510);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnExportPickOrder);
+            this.Controls.Add(this.btnImportDPS);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "DFrmImportDPSList";
+            this.Text = "[UI]-[DPS拣货数据导入]";
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXDPS)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox txtBoxFileDPS;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewXDPS;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private DevComponents.DotNetBar.ButtonX btnSelectFileDPS;
+        private DevComponents.DotNetBar.LabelX lblFail;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.LabelX lblPass;
+        private DevComponents.DotNetBar.LabelX lblOK;
+        private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.LabelX lblTotal;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private DevComponents.DotNetBar.ButtonX btnExportPickOrder;
+        private DevComponents.DotNetBar.ButtonX btnImportDPS;
+        private DevComponents.DotNetBar.ButtonX btnReturn;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+    }
+}
+

@@ -1,0 +1,47 @@
+2019/7/23 11:33:00 :[FrmDPS.dll][已经成功加载!]
+2019/7/23 11:33:00 :LoadRegionTable 加载基础数据出错：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:33:07 :[FrmDPS.dll][已经关闭!]
+2019/7/23 11:34:04 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:34:19 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:34:22 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:35:08 :[FrmDPS.dll][已经成功加载!]
+2019/7/23 11:35:08 :LoadRegionTable 加载基础数据出错：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:35:10 :[FrmDPS.dll][已经关闭!]
+2019/7/23 11:36:07 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:36:47 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:39:37 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:39:48 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 11:39:52 :[frmCreateDataTable][已经关闭!]
+2019/7/23 11:40:03 :[FrmDPS.dll][已经成功加载!]
+2019/7/23 11:40:03 :LoadRegionTable 加载基础数据出错：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:40:11 :查询异常：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:40:11 :InsertIntoDataModel 异常：System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 NFrmDPS.DFrmDPS.InsertIntoDataModel(DataSet dt) 位置 e:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\FrmDPS.cs:行号 898
+2019/7/23 11:40:37 :查询异常：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:40:37 :InsertIntoDataModel 异常：System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 NFrmDPS.DFrmDPS.InsertIntoDataModel(DataSet dt) 位置 e:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\FrmDPS.cs:行号 898
+2019/7/23 11:40:41 :查询异常：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 11:40:41 :InsertIntoDataModel 异常：System.IndexOutOfRangeException: 无法找到表 0。
+   在 System.Data.DataTableCollection.get_Item(Int32 index)
+   在 NFrmDPS.DFrmDPS.InsertIntoDataModel(DataSet dt) 位置 e:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\FrmDPS.cs:行号 898
+2019/7/23 11:40:49 :[FrmDPS.dll][已经关闭!]
+2019/7/23 14:58:43 :[FrmSetDPS.dll][已经关闭!]
+2019/7/23 14:58:55 :[FrmDPS.dll][已经成功加载!]
+2019/7/23 14:58:55 :LoadRegionTable 加载基础数据出错：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/23 14:59:06 :[FrmDPS.dll][已经关闭!]
+2019/7/23 14:59:07 :[frmAutoDspId][已成功加载!]
+2019/7/23 14:59:17 :[frmAutoDspId][已经关闭!]
+2019/7/23 14:59:29 :[FrmSelftTest][已成功加载!]
+2019/7/23 14:59:33 :[FrmSelftTestTag][已经关闭!]
+2019/7/23 14:59:36 :[frmCreateDataTable][已经关闭!]
+2019/7/23 14:59:38 :[frmAutoDspId][已成功加载!]
+2019/7/23 14:59:46 :[frmAutoDspId][已经关闭!]

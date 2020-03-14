@@ -1,0 +1,6 @@
+<configuration>
+  <appSettings>
+    <add key="ConnectionString" value="server=.;database=DSMM;uid=sa;pwd=123456" />
+    <add key="ProviderName" value="System.Data.SqlClient" />
+  </appSettings>
+</configuration>

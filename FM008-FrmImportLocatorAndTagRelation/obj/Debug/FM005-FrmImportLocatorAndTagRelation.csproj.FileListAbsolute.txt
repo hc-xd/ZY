@@ -1,0 +1,49 @@
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csprojAssemblyReference.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csprojResolveAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportLocatorAndTagRelation.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.DFrmImportLocatorAndTagRelation.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\NFrmImportLocatorAndTagRelation.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\DFrmImportLocatorAndTagRelation.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.CoreCompileInputs.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM008-FrmImportLocatorAndTagRelation\obj\Debug\FM005-FrmImportLocatorAndTagRelation.csproj.CopyComplete

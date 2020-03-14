@@ -1,0 +1,8 @@
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\FM005-FrmSelfCheck.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+E:\2016-Code\PTLControlLib-Mine\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb

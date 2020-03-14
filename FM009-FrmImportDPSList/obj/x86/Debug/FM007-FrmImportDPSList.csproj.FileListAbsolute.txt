@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\NFrmImportDPSList.Properties.Resources.resources
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\PTLControlLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+C:\Users\Administrator\Desktop\PTLControlLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\FM007-FrmImportDPSList.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\DFrmImportDPSList.dll
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM009-FrmImportDPSList\obj\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\FM007-FrmImportDPSList.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\NFrmImportDPSList.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\x86\Debug\DFrmImportDPSList.pdb

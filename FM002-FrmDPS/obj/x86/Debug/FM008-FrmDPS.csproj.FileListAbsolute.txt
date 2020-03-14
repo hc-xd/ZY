@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\NFrmDPS.DFrmDPS.resources
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\NFrmDPS.Properties.Resources.resources
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\PTLControlLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+C:\Users\Administrator\Desktop\PTLControlLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\DFrmDPS.dll
+C:\Users\Administrator\Desktop\PTLControlLib-All\FM002-FrmDPS\obj\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\NFrmDPS.DFrmDPS.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\NFrmDPS.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\x86\Debug\DFrmDPS.pdb

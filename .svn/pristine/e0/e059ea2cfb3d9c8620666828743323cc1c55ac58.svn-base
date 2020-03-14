@@ -1,0 +1,259 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Diagnostics;
+
+namespace NFrmImportDPSList
+{
+    public partial class DFrmImportDPSList : Form
+    {
+        private const string sErrCode = "错误代码:FM009";
+        DAL.SQLHelpDataBase myShd;
+        dllConfigApp.ConfigApp mycfg;
+        string mysUser = string.Empty;
+        dllExcelImportAndExport.ExcelImportAndExport impExcel = new dllExcelImportAndExport.ExcelImportAndExport();
+        string sMsg = string.Empty;
+        public DFrmImportDPSList(string sUser, dllConfigApp.ConfigApp cfg, DAL.SQLHelpDataBase shd)
+        {
+            InitializeComponent();
+            mysUser = sUser;
+            mycfg = cfg;
+            myShd = shd;
+        }
+
+        private void btnSelectFileDPS_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Excel|*.xlsx|Excel|*.xls|所有文件|*.*";
+            DialogResult dr = openFileDialog1.ShowDialog();
+            openFileDialog1.RestoreDirectory = true;
+            txtBoxFileDPS.Text = openFileDialog1.FileName;
+            if (!System.IO.File.Exists(openFileDialog1.FileName))
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "选定的文件不存在.");
+            }
+            else
+            {
+                ImportExcelTagLocatorToDataBase(this.dataGridViewXDPS, openFileDialog1.FileName);
+            }
+        }
+        private void ImportExcelTagLocatorToDataBase(DevComponents.DotNetBar.Controls.DataGridViewX dvx1, string sPathFile)
+        {
+
+           DataSet  ds = impExcel.ExcelToDS(sPathFile, out sMsg);
+            if (sMsg.Trim().Length != 0)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, sMsg);
+            }
+            else
+            {
+                lblTotal.Text = ds.Tables[0].Rows.Count.ToString();//合计的总数
+                if (ds.Tables.Count > 0)
+                {
+                    dvx1.DataSource = ds.Tables[0];
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, "查询成功。");
+                    for (int i = 0; i < dvx1.Rows.Count; i++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            dvx1.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                        }
+                    }
+                }
+                else
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "Excel中没有任何数据.");
+                }
+            }
+        }
+
+        private void btnImportDPS_Click(object sender, EventArgs e)
+        {
+            lblOK.Text = "0";
+            lblFail.Text = "0";
+            if (dataGridViewXDPS.Rows.Count == 0)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "没有任何数据可以导入.");
+            }
+            else
+            {
+
+                dllUcShowWnDThread.UcShowWnDThread uc = new dllUcShowWnDThread.UcShowWnDThread("正在处理，请稍后……", null);
+                uc.DoWork = delegate
+                {
+                    System.Data.DataTable dt = this.dataGridViewXDPS.DataSource as System.Data.DataTable;
+                    DataView dv = new DataView(dt);
+                    System.Data.DataTable dtFilter = dv.ToTable(true, new string[] { "pick_order", "box_no", "pick_desc" });//过滤掉重复的记录行
+                    foreach (DataRow dr in dtFilter.Rows)
+                    {
+                        string sOrderNo = dr["pick_order"].ToString();
+                        string sOrderDesc = dr["pick_desc"].ToString();
+                        string sBoxNo = dr["box_no"].ToString();
+                        //插入数据到头表中
+                        if (InsertPickOrderHead(sOrderNo, sOrderDesc, sBoxNo, out sMsg))
+                        {
+                            LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, string.Format("插入拣料单头表:订单号:{0},订单描述:{1},箱号:{2},返回信息：{3}成功", sOrderNo, sOrderDesc, sBoxNo, sMsg));
+                            //获取插入后的头表的Id号
+                            int iId = GetHeadId(sOrderNo);
+                            //插入行表数据
+                            DataRow[] drs = dt.Select(string.Format("pick_order= '{0}'", sOrderNo));
+                            foreach (DataRow dr1 in drs)
+                            {
+                                string sitem_code = dr1["item_code"].ToString();
+                                string sitem_desc = dr1["item_desc"].ToString();
+                                string sitem_unit = dr1["item_unit"].ToString();
+                                string slocator = dr1["locator"].ToString();
+                                double drequire_quantity = Convert.ToDouble(dr1["require_quantity"].ToString());
+                                bool bRtn = InsertPickOrderLine(iId, sitem_code, sitem_desc, sitem_unit, slocator, drequire_quantity, out sMsg);
+                                if (bRtn)
+                                {
+                                    LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, string.Format("插入拣料单行表:头id：{0},物料编码:{1},货位:{2},需求数量:{3},返回信息：{4} 成功", iId, sitem_code, slocator, drequire_quantity, sMsg));
+                                    HandleLabel(1);
+                                }
+                                else
+                                {
+                                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("插入拣料单行表:头Id：{0},物料编码:{1},货位:{2},需求数量:{3},返回信息：{4} 失败", iId, sitem_code, slocator, drequire_quantity, sMsg));
+                                    HandleLabel(0);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("插入拣料单头表:订单号:{0},订单描述:{1},箱号:{2},返回信息：{3}失败", sOrderNo, sOrderDesc, sBoxNo, sMsg));
+                            continue;
+                        }
+                    }
+                };
+                uc.RunAndShow();
+            }
+            //
+            this.dataGridViewXDPS.DataSource = null;
+        }
+        /// <summary>
+        /// 说明：插入行表的数据到数据库中
+        /// </summary>
+        /// <param name="sitem_code">物料编码</param>
+        /// <param name="sitem_desc">物料描述</param>
+        /// <param name="sitem_unit">物料单位</param>
+        /// <param name="slocator">货位</param>
+        /// <param name="drequire_quantity">需求数量</param>
+        /// <param name="iflag">状态标识</param>
+        /// <returns></returns>
+        private bool InsertPickOrderLine(int ihead_id, string sitem_code, string sitem_desc, string sitem_unit, string slocator, double drequire_quantity, out string sg)
+        {
+            string sSql = string.Format(@"insert into t_pick_line(head_id,item_code,item_desc,item_unit,locator,require_quantity,actual_quantity,flag) values(
+                                                                  {0},'{1}','{2}','{3}','{4}',{5},0,0 )", ihead_id, sitem_code, sitem_desc, sitem_unit, slocator, drequire_quantity);
+            return myShd.ExecutCmd(sSql, out sg);
+        }
+        /// <summary>
+        /// 说明：获取拣料单头表的ID号
+        /// </summary>
+        /// <param name="sPickOrder"></param>
+        /// <returns></returns>
+        private int GetHeadId(string sPickOrder)
+        {
+            string sSql = string.Format("select head_id from  t_pick_head h where h.pick_order = '{0}'", sPickOrder);
+            DataSet ds = myShd.ExecuteSql(sSql);
+            if (ds == null)
+            {
+                return 0;
+            }
+            else if (ds.Tables.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                int id = Convert.ToInt32(ds.Tables[0].Rows[0]["head_id"].ToString());
+                return id;
+            }
+        }
+
+        private delegate void delegateHandleLabel(int i);
+        private void HandleLabel(int i)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new delegateHandleLabel(HandleLabel), new object[] { i });
+            }
+            else
+            {
+                if (i == 1)
+                {
+                    this.lblOK.Text = Convert.ToString(Convert.ToInt32(lblOK.Text) + 1);
+                }
+                else
+                {
+                    this.lblFail.Text = Convert.ToString(Convert.ToInt32(lblFail.Text) + 1);
+                }
+            }
+        }
+        /// <summary>
+        /// 说明：执行数据插入到数据库中个
+        /// </summary>
+        /// <param name="sOrderNo">订单号</param>
+        /// <param name="sOrderDesc">订单描述</param>
+        /// <param name="sBoxNo">箱号</param>
+        /// <param name="sg">返回的异常信息</param>
+        /// <returns></returns>
+        private bool InsertPickOrderHead(string sOrderNo, string sOrderDesc, string sBoxNo, out string sg)
+        {
+            //先执行删除
+            string sSql = string.Format("delete from t_pick_head h where h.pick_order = '{0}'", sOrderNo);
+            myShd.ExecutCmd(sSql, out sg);
+
+            //执行插入
+            sSql = string.Format("insert into t_pick_head(pick_order,pick_desc,box_no,status) values('{0}','{1}','{2}',0)", sOrderNo, sOrderDesc, sBoxNo);
+            return myShd.ExecutCmd(sSql, out sg);
+        }
+
+        private void btnExportPickOrder_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sSql = @"select h.pick_order,
+                                   h.pick_desc,
+                                   h.box_no,
+                                   h.start_time,
+                                   h.end_time,
+                                   l.item_code,
+                                   l.item_desc,
+                                   l.item_unit,
+                                   l.locator,
+                                   l.require_quantity ,
+                                   l.actual_quantity,
+                                   l.pick_user,
+                                   l.flag
+                              from t_pick_head h, t_pick_line l
+                             where h.head_id = l.head_id";
+                DataSet dsQuery = myShd.ExecuteSql(sSql);
+                impExcel.DataTableToExcel(dsQuery.Tables[0]);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, "数据导出成功!");
+            }
+            catch (Exception ex)
+            {
+                string sMsg = string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, sMsg);
+            }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            impExcel.KillExcel();
+            LogRichBox.LogRichBox.DoLogRichBox(Color.Black, FontStyle.Bold, 10, "[frmCreateDataTable][已经关闭!]");
+            this.Close();
+            this.Dispose();
+        }
+
+        private void dataGridViewXDPS_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            int rownum = (e.RowIndex + 1);
+            System.Drawing.Rectangle rct = new System.Drawing.Rectangle(e.RowBounds.Location.X, e.RowBounds.Location.Y + 4, ((DataGridView)sender).RowHeadersWidth - 4, e.RowBounds.Height);
+            TextRenderer.DrawText(e.Graphics, rownum.ToString(), ((DataGridView)sender).RowHeadersDefaultCellStyle.Font, rct, ((DataGridView)sender).RowHeadersDefaultCellStyle.ForeColor, System.Drawing.Color.Transparent, TextFormatFlags.HorizontalCenter);
+        }
+    }
+}

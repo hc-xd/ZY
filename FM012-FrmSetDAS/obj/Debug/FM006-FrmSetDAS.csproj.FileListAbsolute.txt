@@ -1,0 +1,33 @@
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\bin\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\bin\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.DFrmSetDAS.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.DFrmSetDAS.resources
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSetDAS.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.DFrmSetDAS.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSetDAS.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSetDAS.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csprojResolveAssemblyReference.cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.DFrmSetDAS.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\NFrmSetDAS.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\FM006-FrmSetDAS.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM012-FrmSetDAS\obj\Debug\DFrmSetDAS.pdb

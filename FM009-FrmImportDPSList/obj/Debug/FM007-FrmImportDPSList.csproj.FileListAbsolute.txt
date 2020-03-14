@@ -1,0 +1,49 @@
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.CopyComplete
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csprojAssemblyReference.cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmImportDPSList.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\FM007-FrmImportDPSList.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb

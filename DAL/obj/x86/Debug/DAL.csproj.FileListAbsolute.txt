@@ -1,0 +1,53 @@
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\DAL.dll
+E:\2016-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\DAL.pdb
+E:\2017-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\DAL.dll
+E:\2017-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\DAL.pdb
+E:\2017-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\2017-Code\PTLControlLib-Mine\DAL\bin\x86\Debug\dllConfigApp.pdb
+E:\2017-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\2017-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\DAL.dll
+E:\2017-Code\PTLControlLib-Mine\DAL\obj\x86\Debug\DAL.pdb
+E:\2017-Code\PTLControlLib-Wall\DAL\bin\x86\Debug\DAL.dll
+E:\2017-Code\PTLControlLib-Wall\DAL\bin\x86\Debug\DAL.pdb
+E:\2017-Code\PTLControlLib-Wall\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\2017-Code\PTLControlLib-Wall\DAL\bin\x86\Debug\dllConfigApp.pdb
+E:\2017-Code\PTLControlLib-Wall\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\2017-Code\PTLControlLib-Wall\DAL\obj\x86\Debug\DAL.dll
+E:\2017-Code\PTLControlLib-Wall\DAL\obj\x86\Debug\DAL.pdb
+E:\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.dll
+E:\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.pdb
+E:\PTLControlLib-JJY\DAL\bin\x86\Debug\dllConfigApp.dll
+E:\PTLControlLib-JJY\DAL\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.dll
+E:\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.pdb
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.dll
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.pdb
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.dll
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.pdb
+F:\CompanyWork\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.dll
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\DAL.pdb
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\bin\x86\Debug\dllConfigApp.dll
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.dll
+F:\CompanyWork\已完成\久久丫（上海）\PTLControlLib-JJY\DAL\obj\x86\Debug\DAL.pdb

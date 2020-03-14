@@ -1,0 +1,14 @@
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Release\DAL.dll
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Release\DAL.pdb
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Release\dllConfigApp.dll
+E:\2016-Code\PTLControlLib\DAL\bin\x86\Release\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Release\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Release\DAL.dll
+E:\2016-Code\PTLControlLib\DAL\obj\x86\Release\DAL.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Release\DAL.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Release\DAL.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Release\dllConfigApp.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\bin\x86\Release\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Release\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Release\DAL.dll
+E:\2016-Code\PTLControlLib - 副本\DAL\obj\x86\Release\DAL.pdb

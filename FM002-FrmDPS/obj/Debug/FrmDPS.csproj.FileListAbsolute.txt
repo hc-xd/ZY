@@ -1,0 +1,10 @@
+E:\2016-Code\PTLControlLib\FrmDPS\bin\Debug\FrmDPS.exe
+E:\2016-Code\PTLControlLib\FrmDPS\bin\Debug\FrmDPS.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\FrmDPS.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\FrmDPS.pdb
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\FrmDPS.FrmDPS.resources
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\FrmDPS.Properties.Resources.resources
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\FrmDPS.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\FrmDPS.dll
+E:\2016-Code\PTLControlLib\FrmDPS\obj\Debug\FrmDPS.pdb

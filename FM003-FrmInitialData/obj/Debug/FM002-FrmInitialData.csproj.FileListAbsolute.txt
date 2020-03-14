@@ -1,0 +1,59 @@
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmInitialData.dll
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmInitialData.pdb
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\ResolveAssemblyReference.cache
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+E:\2017-Code\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csprojAssemblyReference.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.CopyComplete
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csprojResolveAssemblyReference.cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmInitialData.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmInitialData.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csprojResolveAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\NFrmInitialData.DFrmInitialData.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\NFrmInitialData.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\FM002-FrmInitialData.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\DFrmInitialData.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM003-FrmInitialData\obj\Debug\DFrmInitialData.pdb

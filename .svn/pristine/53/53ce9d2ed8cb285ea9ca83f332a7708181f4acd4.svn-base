@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PTLControlLib">
+</Property><Property Name="解决方案文件" Value="F:\CompanyWork\框架\PTLControlLib-Wall\PTLControlLib.sln">
+</Property><Property Name="Date" Value="2018年2月23日">
+</Property><Property Name="Time" Value="15:47">
+</Property></Properties><Event ErrorLevel="0" Project="ocxPTLControlLib" Source="PTLControlLib\ocxPTLControlLib.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="ocxPTLControlLib" Source="PTLControlLib\ocxPTLControlLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\DAL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DAL" Source="DAL\DAL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\BLL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="BLL" Source="BLL\BLL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL002-dllConfigApp" Source="DLL\dllConfigApp\DL002-dllConfigApp.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL002-dllConfigApp" Source="DLL\dllConfigApp\DL002-dllConfigApp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL008-dllPTLControlLib" Source="DLL\dllCtrl\DL008-dllPTLControlLib.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL008-dllPTLControlLib" Source="DLL\dllCtrl\DL008-dllPTLControlLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL006-dllEventLogFile" Source="DLL\dllEventLog\DL006-dllEventLogFile.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL006-dllEventLogFile" Source="DLL\dllEventLog\DL006-dllEventLogFile.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL005-dllEventLogDataBase" Source="DLL\dllEventLogDataBase\DL005-dllEventLogDataBase.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL005-dllEventLogDataBase" Source="DLL\dllEventLogDataBase\DL005-dllEventLogDataBase.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ocxLoginFrm" Source="OCX\ocxLoginFrm\ocxLoginFrm.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="ocxLoginFrm" Source="OCX\ocxLoginFrm\ocxLoginFrm.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL009-dllShowWnDThread" Source="DLL\dllShowWnDThread\DL009-dllShowWnDThread.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL009-dllShowWnDThread" Source="DLL\dllShowWnDThread\DL009-dllShowWnDThread.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LogRichBox" Source="ILogRichBox\LogRichBox.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="LogRichBox" Source="ILogRichBox\LogRichBox.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL004-dllCore" Source="dllReflection\DL004-dllCore.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL004-dllCore" Source="dllReflection\DL004-dllCore.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL007-dllExcelImportAndExport" Source="dllImportDataFromExcel\DL007-dllExcelImportAndExport.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL007-dllExcelImportAndExport" Source="dllImportDataFromExcel\DL007-dllExcelImportAndExport.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL001-dllChart" Source="dllChart\DL001-dllChart.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL001-dllChart" Source="dllChart\DL001-dllChart.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL003-dllConvertBase64" Source="dllConvertBase64\DL003-dllConvertBase64.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL003-dllConvertBase64" Source="dllConvertBase64\DL003-dllConvertBase64.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM006-FrmImportLocatorAndTagRelation" Source="FM008-FrmImportLocatorAndTagRelation\FM006-FrmImportLocatorAndTagRelation.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM006-FrmImportLocatorAndTagRelation" Source="FM008-FrmImportLocatorAndTagRelation\FM006-FrmImportLocatorAndTagRelation.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM004-FrmSetMenu" Source="FM006-FrmSetMenu\FM004-FrmSetMenu.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM004-FrmSetMenu" Source="FM006-FrmSetMenu\FM004-FrmSetMenu.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM001-FrmAutoCheckTag" Source="FM001-FrmAutoCheckTag\FM001-FrmAutoCheckTag.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM001-FrmAutoCheckTag" Source="FM001-FrmAutoCheckTag\FM001-FrmAutoCheckTag.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM002-FrmInitialData" Source="FM003-FrmInitialData\FM002-FrmInitialData.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM002-FrmInitialData" Source="FM003-FrmInitialData\FM002-FrmInitialData.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM003-FrmSelfCheck" Source="FM005-FrmSelfCheck\FM003-FrmSelfCheck.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM003-FrmSelfCheck" Source="FM005-FrmSelfCheck\FM003-FrmSelfCheck.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL010-dllEncryptDES" Source="DL010-dllEncrypt\DL010-dllEncryptDES.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL010-dllEncryptDES" Source="DL010-dllEncrypt\DL010-dllEncryptDES.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL011-dllCommon" Source="DL011-dllCommon\DL011-dllCommon.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DL011-dllCommon" Source="DL011-dllCommon\DL011-dllCommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM005-WinUI" Source="WinFrmUI\FM005-WinUI.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM005-WinUI" Source="WinFrmUI\FM005-WinUI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM007-FrmDAS2" Source="FM007-FrmDAS\FM007-FrmDAS2.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM007-FrmDAS2" Source="FM007-FrmDAS\FM007-FrmDAS2.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="FM008-FrmSatistics" Source="FM008-FrmSatistics\FM008-FrmSatistics.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="FM008-FrmSatistics" Source="FM008-FrmSatistics\FM008-FrmSatistics.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PTLControlLib.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="PTLControlLib.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DL002-dllConfigApp" Source="DLL\dllConfigApp\DL002-dllConfigApp.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL008-dllPTLControlLib" Source="DLL\dllCtrl\DL008-dllPTLControlLib.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL006-dllEventLogFile" Source="DLL\dllEventLog\DL006-dllEventLogFile.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL005-dllEventLogDataBase" Source="DLL\dllEventLogDataBase\DL005-dllEventLogDataBase.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL009-dllShowWnDThread" Source="DLL\dllShowWnDThread\DL009-dllShowWnDThread.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL004-dllCore" Source="dllReflection\DL004-dllCore.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL007-dllExcelImportAndExport" Source="dllImportDataFromExcel\DL007-dllExcelImportAndExport.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL001-dllChart" Source="dllChart\DL001-dllChart.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL003-dllConvertBase64" Source="dllConvertBase64\DL003-dllConvertBase64.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL010-dllEncryptDES" Source="DL010-dllEncrypt\DL010-dllEncryptDES.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DL011-dllCommon" Source="DL011-dllCommon\DL011-dllCommon.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="ocxPTLControlLib" Source="PTLControlLib\ocxPTLControlLib.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="ocxLoginFrm" Source="OCX\ocxLoginFrm\ocxLoginFrm.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\DAL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\BLL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM006-FrmImportLocatorAndTagRelation" Source="FM008-FrmImportLocatorAndTagRelation\FM006-FrmImportLocatorAndTagRelation.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM004-FrmSetMenu" Source="FM006-FrmSetMenu\FM004-FrmSetMenu.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM001-FrmAutoCheckTag" Source="FM001-FrmAutoCheckTag\FM001-FrmAutoCheckTag.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM002-FrmInitialData" Source="FM003-FrmInitialData\FM002-FrmInitialData.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM003-FrmSelfCheck" Source="FM005-FrmSelfCheck\FM003-FrmSelfCheck.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM005-WinUI" Source="WinFrmUI\FM005-WinUI.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM007-FrmDAS2" Source="FM007-FrmDAS\FM007-FrmDAS2.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="FM008-FrmSatistics" Source="FM008-FrmSatistics\FM008-FrmSatistics.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="LogRichBox" Source="ILogRichBox\LogRichBox.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

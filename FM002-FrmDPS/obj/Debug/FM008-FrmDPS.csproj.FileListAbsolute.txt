@@ -1,0 +1,62 @@
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csprojAssemblyReference.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.CopyComplete
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csprojResolveAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmDPS.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.FrmDetailData.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.DFrmDPS.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.frmIn.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\NFrmDPS.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\DFrmDPS.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.CoreCompileInputs.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM002-FrmDPS\obj\Debug\FM008-FrmDPS.csproj.CopyComplete

@@ -1,0 +1,6 @@
+<configuration>
+  <appSettings>
+    <add key="sql" value="select * from t_menu" />
+    <add key="RestartTagId" value="FFFF" />
+  </appSettings>
+</configuration>

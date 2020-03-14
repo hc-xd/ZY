@@ -1,0 +1,16 @@
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\FM009-FrmImportDPSList.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmImportDPSList.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmImportDPSList.pdb
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+E:\2016-Code\PTLControlLib\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmImportDPSList.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmImportDPSList.pdb
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.DFrmImportDPSList.resources
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\NFrmImportDPSList.Properties.Resources.resources
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\FM009-FrmImportDPSList.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.dll
+E:\2016-Code\PTLControlLib - 副本\FM009-FrmImportDPSList\obj\Debug\DFrmImportDPSList.pdb

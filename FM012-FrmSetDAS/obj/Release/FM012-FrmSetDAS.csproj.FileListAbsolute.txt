@@ -1,0 +1,8 @@
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\bin\Release\DFrmSetDAS.dll
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\bin\Release\DFrmSetDAS.pdb
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\NFrmSetDAS.DFrmSetDAS.resources
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\NFrmSetDAS.Properties.Resources.resources
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\FM012-FrmSetDAS.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\DFrmSetDAS.dll
+E:\2016-Code\PTLControlLib - 副本\FM012-FrmSetDAS\obj\Release\DFrmSetDAS.pdb

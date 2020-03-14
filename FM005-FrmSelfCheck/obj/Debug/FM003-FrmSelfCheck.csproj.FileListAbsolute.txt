@@ -1,0 +1,65 @@
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+E:\2017-Code\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\ResolveAssemblyReference.cache
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+E:\2017-Code\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架\PTLControlLib-Wall\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csprojResolveAssemblyReference.cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\框架2018\框架\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.CoreCompileInputs.cache
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+F:\CompanyWork\项目\进行中\H-海王星辰\PTLControLib-All\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+E:\项目文件\海王星辰\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csprojResolveAssemblyReference.cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+E:\项目文件\约克空调二期\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csprojResolveAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\WinFrmUI\bin\x86\Debug\DFrmSelfCheck.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.DFrmSelfCheck.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\NFrmSelfCheck.Properties.Resources.resources
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.GenerateResource.Cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.dll
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\DFrmSelfCheck.pdb
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csprojAssemblyReference.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.CoreCompileInputs.cache
+E:\项目文件\唐山住友\住友机械拣选\PTLControLib-All - 拣选\FM005-FrmSelfCheck\obj\Debug\FM003-FrmSelfCheck.csproj.CopyComplete

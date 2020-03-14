@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<configuration>
+  <appSettings>
+    <add key="sql" value="select * from t_menu" />
+    <add key="RestartTagId" value="0001" />
+    <add key="DPSOperateModel" value="Region" />
+    <add key="DPSLight" value="2to2" />
+    <add key="DPSAddBox" value="1" />
+    <add key="DPSPending" value="6928980613680" />
+    <add key="DPSLocator" value="1" />
+    <add key="DASOperateModel" value="One" />
+    <add key="DASLight" value="Sensor" />
+    <add key="DASPending" value="4547648202367" />
+    <add key="WaveHead" value="00" />
+    <add key="DASWait" value="Y" />
+    <add key="DASWaveHead" value="9316" />
+    <add key="CountListMode" value="WithOutList" />
+    <add key="CountRegion" value="Region" />
+    <add key="CountPending" value="TBCV1607039570" />
+    <add key="Download" value="10" />
+    <add key="iUpload" value="40" />
+    <add key="WallIp" value="192.168.0.252" />
+    <add key="SN" value="837" />
+    <add key="VendorName" value="SiSEA" />
+    <add key="DASCount" value="0" />
+    <add key="GreenCount" value="0" />
+    <add key="RedCount" value="0" />
+    <add key="OperateModel" value="Region" />
+    <add key="Light" value="2to2" />
+    <add key="AddBox" value="0" />
+    <add key="Pending" value="88888888" />
+    <add key="Locator" value="0" />
+    <add key="pick_time" value="2" />
+    <add key="task_time" value="3" />
+    <add key="timeSpan1" value="7" />
+    <add key="timeSpan2" value="1" />
+    <add key="timeSpan3" value="3" />
+    <add key="timeSpan4" value="4" />
+    <add key="timeSpan5" value="5" />
+    <add key="timeSpan6" value="6" />
+    <add key="timeSpan7" value="7" />
+    <add key="printerName" value="Deli DL-888T" />   
+ <add key="ConnectionStr" value="server=localhost;user id=root;password=123;database=ZY;charset=utf8" />
+  </appSettings>
+</configuration>

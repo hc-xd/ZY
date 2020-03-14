@@ -1,0 +1,1006 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Collections;
+using System.Diagnostics;
+
+namespace NFrmDPS
+{
+    public partial class DFrmDPS : Form
+    {
+        /*=====================标准变量===================================*/
+        private const string sErrCode = "错误代码:FM002";
+        //数据查询对象
+        DAL.SQLHelpDataBase myShd;
+        //数据库访问对象
+        BLL.CreatBaseTable cltBase = new BLL.CreatBaseTable();
+        //操作日志的保存
+        BLL.CreatLogTable cltlog = new BLL.CreatLogTable();
+        //用户名
+        string mysUser;
+        //访问通用配置文件
+        dllConfigApp.ConfigApp mycfg;
+        /*======================end=======================================*/
+
+        /*==========================从控制器返回的变量====================*/
+        const string sKeyValueFromScanner = "80";
+        const string sKeyValueFromEnd = "FE";
+        const string sKeyValueFromDPSTag = "12";
+        const string sKeyValueFromDASTag = "11";
+        /*==========================end ===================================*/
+  
+        /*=====================读取已有的配置===================================*/
+        bool bOperateModel { get; set; } //true 为按订单拣料 false为分区拣料
+        bool bLightModel { get; set; } //true 为递减模式 false拍灭即灭
+        bool bAddBox { get; set; } // true 允许加箱子 false不允许加箱
+        bool bLocator { get; set; } //true 显示货位的前2位  false 不显示货位前2位
+        string sPendingBarcode { get; set; }//挂起条码
+        /*=====================end===================================*/
+
+    
+        dllConfigApp.ConfigApp cfgsql = new dllConfigApp.ConfigApp("SQL_DPS_GetByOrderNo.xml");//sql语句所在的位置
+        dllConvertBase64.ConvertBase64 base64 = new dllConvertBase64.ConvertBase64();
+
+        DataTable dbPick = new DataTable();//正在拣料单据清单
+        List<DataModelDPS.DPSLayer1> listDataModel = new List<DataModelDPS.DPSLayer1>();//亮灯集合汇总
+
+        public DFrmDPS(string sUser, dllConfigApp.ConfigApp cfg, DAL.SQLHelpDataBase shd)
+        {
+            InitializeComponent();
+            mysUser = sUser;
+            mycfg = cfg;
+            myShd = shd;
+            //绑定标签的返回值
+            RYB_PTL_API.RYB_PTL.UserResultAvailable += new RYB_PTL_API.RYB_PTL.UserResultAvailableEventHandler(ptl_UserResultAvailable);
+            LogRichBox.LogRichBox.DoLogRichBox(Color.Black, FontStyle.Bold, 10, "[FrmDPS.dll][已经成功加载!]");
+        }
+
+        /// <summary>
+        /// 说明:标签拍灭触发
+        /// </summary>
+        /// <param name="rs"></param>
+        private void ptl_UserResultAvailable(RYB_PTL_API.RYB_PTL.RtnValueStruct rs)
+        {
+            string sIp = rs.Ip;
+            string sTag = rs.Tagid;
+            string sKeyCode = rs.KeyCode.ToUpper();
+            string sLocator = rs.Locator;
+            string sValue = rs.Number;
+            HandleDataFromScanner(sIp, sTag, sKeyCode, sLocator, sValue);
+        }
+        object v1 = new object();
+        object v2 = new object();
+        object v3 = new object();
+        object v4 = new object();
+        object v5 = new object();
+        private void HandleDataFromScanner(string sIp,string sTagId ,string sKeyCode,string sLocator,string sNumber)
+        {
+            switch (sKeyCode.ToUpper())
+            {
+                    //从扫描枪扫描返回
+                case sKeyValueFromScanner:
+                    {
+                        lock (v1)
+                        {
+                            DosKeyValueFromScanner(sIp, sTagId, sKeyCode, sLocator, sNumber);
+                        }
+                        break;
+                    }
+                    //处理DPS亮灯模式返回
+                case sKeyValueFromDPSTag:
+                    {
+                        lock (v2)
+                        {
+                            DosKeyValueFromTag(sIp, sTagId, sKeyCode, sLocator, sNumber);
+                        }
+                        break;
+                    }
+                    //处理End返回
+                case sKeyValueFromEnd:
+                    {
+                        lock (v4)
+                        {
+                            DosKeyValueFromEnd(sIp, sTagId, sKeyCode, sLocator, sNumber);
+                        }
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
+        /// <summary>
+        /// 说明：根据扫描之后进行挂起任务
+        /// </summary>
+        /// <param name="sIp"></param>
+        /// <param name="sTagId"></param>
+        /// <param name="sKeyCode"></param>
+        /// <param name="sLocator"></param>
+        /// <param name="sValue"></param>
+        private void PendingTask(string sIp, string sTagId, string sKeyCode, string sLocator, string sValue)
+        {
+            try
+            {
+                if (listDataModel == null || listDataModel.Count == 0)
+                {
+                    //LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), "当前分区没有任务单可以挂起."));
+                    return;
+                }
+                else
+                {
+                    /* 1.根据扫描枪的地址，从集合中查找当前分区
+                     * 2.如果没有找到，直接报错提醒。
+                     * 3.如果找到，首先熄灭此区域下的所有的标签，再熄灭巷道灯，再熄灭订单显示器,完成器
+                     */
+                    DataModelDPS.DPSLayer1 dy1 = listDataModel.Find(x => x.com_id_ip == sIp && x.com_id == sTagId);
+                    if (dy1 == null)
+                    {
+                        //LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), "当前分区没有任务单可以挂起."));
+                        return;
+                    }
+                    else
+                    {
+                        foreach (DataModelDPS.DPSLayer2 dy2 in dy1.dps2)
+                        {
+                            foreach (DataModelDPS.DPSLayer3 dy3 in dy2.dps3)
+                            {
+                                //熄灭标签
+                                RYB_PTL_API.RYB_PTL.RYB_PTL_CloseDigit5(dy3.tag_id_ip, dy3.tag_id);
+                                //从列表中移除集合
+                                RemoveListFromDataGridViewX(dy3.line_id);
+                            }
+                            //熄灭巷道灯
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(dy2.aisle_lamp_id_ip, dy2.aisle_lamp_id, 5, 0);
+                            System.Threading.Thread.Sleep(20);
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(dy2.aisle_lamp_id_ip, dy2.aisle_lamp_id, 6, 0);
+                        }
+                        //熄灭订单显示器
+                        if (dy1.order_id_ip.Trim().Length > 0 && dy1.order_id.Trim().Length > 0)
+                        {
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_DspOrderLED(dy1.order_id_ip, dy1.order_id, "----------", 1);
+                        }
+                        //熄灭完成器
+                        if (dy1.finisher_id_ip.Trim().Length > 0 && dy1.finisher_id.Trim().Length > 0)
+                        {
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_CloseDigit5(dy1.finisher_id_ip, dy1.finisher_id);
+                        }
+                        //从大集合中移除集合
+                        listDataModel.Remove(dy1);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message));
+            }
+        }
+        private delegate void delegateRemoveListFromDataGridViewX(int iLineId);
+        private void RemoveListFromDataGridViewX(int iLineId)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new delegateRemoveListFromDataGridViewX(RemoveListFromDataGridViewX), new object[] { iLineId });
+            }
+            else
+            {
+                try
+                {
+                    //从列表中移除集合
+                    for (int i = 0; i < dataGridViewX1.Rows.Count; i++)
+                    {
+                        int ld = Convert.ToInt32(dataGridViewX1.Rows[i].Cells["line_id"].Value);
+                        if (ld == iLineId)
+                        {
+                            dataGridViewX1.Rows.RemoveAt(i);
+                            dataGridViewX1.Refresh();
+                            lblCount.Text = dataGridViewX1.Rows.Count.ToString();
+                            break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// 说明：处理从扫描枪扫描返回的数据
+        /// </summary>
+        private void DosKeyValueFromScanner(string sIp, string sTagId, string sKeyCode, string sLocator, string sValue)
+        {
+            try
+            {
+                //处理扫描枪返回的数据
+                sValue = sValue.TrimEnd(new char[] { '\r', '\n', '\0' });
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Black, FontStyle.Bold, 10, string.Format("扫描到条码数据为:[{0}]", sValue));
+                DisplayTxtBoxScanBarcode(txtBoxScanBarcode, sValue);//显示数据到文本框中
+
+                //1.挂起
+                //if (sValue == sPendingBarcode)
+                //{
+                PendingTask(sIp, sTagId, sKeyCode, sLocator, sValue);
+                //    return;
+                //}
+                //2.获取数据
+                if (!CheckRegionBusyOrFree(sTagId))
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format(string.Format("不能并行任务，需要等待.:[{0}0][扫描数据为:{1}]", sErrCode, sValue)));
+                    return;
+                }
+                string sSql = string.Empty;
+                if (!bOperateModel)
+                {
+                    //按分区模式拣料
+                    try
+                    {
+                        sSql = string.Format(sQueryDataByPickOrder, sValue, sTagId);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("SQL语句格式错误:[{0}1][{1}]", sErrCode, ex.Message));
+                        return;
+                    }
+                }
+                else
+                {
+                    //按照订单作业的模式
+                    try
+                    {
+                        sSql = string.Format(sQueryDataByPickOrder, sValue);
+                    }
+                    catch (Exception ex)
+                    {
+                        LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("SQL语句格式错误:[{0}2][{1}]", sErrCode, ex.Message));
+                        return;
+                    }
+                }
+                string sMsg = string.Empty;
+                DataSet ds = myShd.ExecuteSql(sSql, out sMsg);
+                //成功获取到数据
+                if (sMsg.Trim().Length == 0)
+                {
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    {
+                        int iRowCount = ds.Tables[0].Rows.Count;
+                        LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, string.Format("获取到记录总条数为:{0}", iRowCount));
+                        dbPick.Merge(ds.Tables[0], false);//合并追加数据
+                        dbPick.AcceptChanges();
+                        DisplayDataGridView(dbPick);//显示到DataGridview中
+                        InsertListByDataTable(ds.Tables[0]);//把数据加入到集合中
+                    }
+                    else
+                    {
+                        //没有查询到此订单的数据，把订单显示器显示为0，并闪烁3s的红色灯
+                        string ssqlGetOrderId = string.Format("select distinct order_id,order_id_ip,aisle_lamp_id,aisle_lamp_id_ip from t_tag_locator where com_id = '{0}' and com_id_ip = '{1}'", sTagId, sIp);
+                        ds = myShd.ExecuteSql(ssqlGetOrderId, out sMsg);
+                        if (sMsg.Trim().Length == 0)
+                        {
+                            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count != 0)
+                            {
+                                string sorder_id_ip = ds.Tables[0].Rows[0]["order_id_ip"].ToString();
+                                string sorder_id = ds.Tables[0].Rows[0]["order_id"].ToString();
+                                string saisle_lamp_id_ip = ds.Tables[0].Rows[0]["aisle_lamp_id_ip"].ToString();
+                                string saisle_lamp_id = ds.Tables[0].Rows[0]["aisle_lamp_id"].ToString();
+                                structAisleLamp sp = new structAisleLamp();
+                                sp.sOrderIp = sorder_id_ip;
+                                sp.sOrderId = sorder_id;
+                                sp.sAisleLampIP = saisle_lamp_id_ip;
+                                sp.sAisleId = saisle_lamp_id;
+                                System.Threading.Thread th = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(LightAisleRedAndShowOrderLED));
+                                th.Start(sp);
+                            }
+                        }
+                    }
+                }
+                //查询到数据异常
+                else
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}3][{1}]", sErrCode, sMsg));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                string sErrMsg = string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}{1}][{2}]", sErrCode, sErrMsg));
+            }
+        }
+
+        
+        /// <summary>
+        /// 第一步：按分区作业：判断当前分区是否可以扫描下一张订单或按订单作业：判断能否扫描新的订单进来
+        /// </summary>
+        /// <param name="sComId"></param>
+        /// <param name="sScanValue"></param>
+        private bool CheckRegionBusyOrFree(string sComId)
+        {
+            if (bOperateModel)
+            {
+                //按订单
+                if (listDataModel.Count > 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                //按分区作业
+                if (listDataModel.Count == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                   //查找当前分区是否有任务正在作业
+                    DataModelDPS.DPSLayer1 dml = listDataModel.Find(x => x.com_id == sComId);
+                    if (dml == null)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        //把此区域下的所有巷道灯都闪烁一次红色并自动熄灭
+                        foreach (DataModelDPS.DPSLayer2 dy2 in dml.dps2)
+                        {
+                            structAisleLamp sp = new structAisleLamp();
+                            sp.sAisleLampIP = dy2.aisle_lamp_id_ip;
+                            sp.sAisleId = dy2.aisle_lamp_id;
+                            System.Threading.Thread th = new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(LightAisleRed));
+                            th.Start(sp);
+                        }
+                        return false;
+                    }
+                }
+            }
+        }
+        struct structAisleLamp
+        {
+            public string sAisleLampIP { get; set; }
+            public string sAisleId { get; set; }
+            public string sOrderId { get; set; }
+            public string sOrderIp { get; set; }
+        }
+        /// <summary>
+        /// 把巷道灯红灯点亮3秒，提醒
+        /// </summary>
+        /// <param name="sAisleLampIP"></param>
+        /// <param name="sAisleId"></param>
+        private void LightAisleRed(object v)
+        {
+            structAisleLamp sp = (structAisleLamp)v;
+            string sAisleLampIP = sp.sAisleLampIP;
+            string sAisleId = sp.sAisleId;
+            if (sAisleLampIP.Trim().Length > 0 && sAisleId.Trim().Length > 0)
+            {
+                RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(sAisleLampIP, sAisleId, 6, 3);
+                System.Threading.Thread.Sleep(3000);
+                RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(sAisleLampIP, sAisleId, 6, 0);
+            }
+        }
+        /// <summary>
+        /// 把巷道灯红灯点亮3秒并点亮订单显示器提醒
+        /// </summary>
+        /// <param name="sAisleLampIP"></param>
+        /// <param name="sAisleId"></param>
+        private void LightAisleRedAndShowOrderLED(object v)
+        {
+            structAisleLamp sp = (structAisleLamp)v;
+            string sAisleLampIP = sp.sAisleLampIP;
+            string sAisleId = sp.sAisleId;
+            string sOrderIp = sp.sOrderIp;
+            string sOrderId = sp.sOrderId;
+            bool isShowOrderLED = false;
+            bool isShowAisle = false;
+            if (sOrderIp.Trim().Length > 0 && sOrderId.Trim().Length > 0)
+            {
+                RYB_PTL_API.RYB_PTL.RYB_PTL_DspOrderLED(sOrderIp, sOrderId, "No Order", 1);
+                isShowOrderLED = true;
+            }
+            if (sAisleLampIP.Trim().Length > 0 && sAisleId.Trim().Length > 0)
+            {
+                RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(sAisleLampIP, sAisleId, 6, 3);
+                isShowAisle = true;
+            }
+            System.Threading.Thread.Sleep(3000);
+            if (isShowOrderLED)
+            {
+                RYB_PTL_API.RYB_PTL.RYB_PTL_DspOrderLED(sOrderIp, sOrderId, "----------", 1);
+            }
+            if (isShowAisle)
+            {
+                RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(sAisleLampIP, sAisleId, 6, 0);
+            }
+        }
+        /// <summary>
+        /// 说明：第2步：把获取的数据清单放入到泛型集合中
+        /// </summary>
+        /// <param name="db"></param>
+        private void InsertListByDataTable(DataTable db)
+        {
+            try
+            {
+                if (db == null || db.Rows.Count ==0)
+                {
+                    return;
+                }
+                //第1层处理数据
+                DataView dvLayer1 = new DataView(db);
+                DataTable dbLayer1 = dvLayer1.ToTable(true, new string[] { "head_id", "pick_order", "box_no", "status", "region_no", "com_id", "com_id_ip", "finisher_id", "finisher_id_ip", "order_id", "order_id_ip" });//过滤掉重复的
+                ArrayList alistAisleLamp = new ArrayList();
+                foreach (DataRow dr1 in dbLayer1.Rows)
+                {
+                    //找第1层
+                    int ihead_id = Convert.ToInt32(dr1["head_id"].ToString());
+                    string sPick_order = dr1["pick_order"].ToString();
+                    string sBoxNo = dr1["box_no"].ToString();
+                    int iStatus = Convert.ToInt32(dr1["status"].ToString());
+                    string sregion_no = dr1["region_no"].ToString();
+                    string scom_id = dr1["com_id"].ToString();
+                    string scom_id_ip = dr1["com_id_ip"].ToString();
+                    string sfinisher_id = dr1["finisher_id"].ToString();
+                    string sfinisher_id_ip = dr1["finisher_id_ip"].ToString();
+                    string sorder_id = dr1["order_id"].ToString();
+                    string sorder_id_ip = dr1["order_id_ip"].ToString();
+
+                    DataModelDPS.DPSLayer1 layer1 = new DataModelDPS.DPSLayer1();
+                    layer1.dps2 = new List<DataModelDPS.DPSLayer2>();
+                    layer1.head_id = ihead_id; //头表的ID
+                    layer1.pick_order = sPick_order;//拣料单号
+                    layer1.box_no = sBoxNo;//箱号
+                    layer1.status = iStatus;//订单状态:0 是初始状态 1是正在拣选状态 2是完成状态
+                    layer1.region_no = sregion_no;//区域编号
+                    layer1.com_id = scom_id;//扫描枪地址
+                    layer1.com_id_ip = scom_id_ip;//扫描枪IP地址
+                    layer1.finisher_id = sfinisher_id;//完成器地址
+                    layer1.finisher_id_ip = sfinisher_id_ip;//完成器IP地址
+                    layer1.order_id = sorder_id;//订单显示器地址
+                    layer1.order_id_ip = sorder_id_ip;//订单显示器IP地址
+                   
+                    //找第2层
+                    DataRow[] drs2 = db.Select(string.Format("region_no= '{0}'", sregion_no));
+                    foreach (DataRow dr2 in drs2)
+                    {
+                        string sAisle_lamp_id = dr2["aisle_lamp_id"].ToString();//巷道灯地址
+                        string sAisle_lamp_id_ip = dr2["aisle_lamp_id_ip"].ToString();//巷道灯IP地址（为了防止用的巷道灯比较多的，只要保证一个控制器下的巷道灯地址唯一即可）
+                        string sLampeIdAndIp = sAisle_lamp_id_ip + sAisle_lamp_id;
+                        if (!alistAisleLamp.Contains(sLampeIdAndIp))
+                        {
+                            alistAisleLamp.Add(sLampeIdAndIp);
+                            DataModelDPS.DPSLayer2 layer2 = new DataModelDPS.DPSLayer2();
+                            layer2.dps3 = new List<DataModelDPS.DPSLayer3>();
+                            layer2.aisle_lamp_id = sAisle_lamp_id;//巷道灯地址
+                            layer2.aisle_lamp_id_ip = sAisle_lamp_id_ip;//巷道灯IP地址
+
+                             DataRow[] drs3 = db.Select(string.Format("region_no= '{0}' and aisle_lamp_id ='{1}' and aisle_lamp_id_ip = '{2}'", sregion_no, sAisle_lamp_id, sAisle_lamp_id_ip));
+                            //找第3层
+                            foreach (DataRow dr3 in drs3)
+                            {
+                                int iline_id = Convert.ToInt32(dr3["line_id"]);
+                                string sitem_code = dr3["item_code"].ToString();
+                                int iflag = Convert.ToInt32(dr3["flag"]);
+                                int irequire_quantity = Convert.ToInt32(dr3["require_quantity"]);
+                                int iactual_quantity = Convert.ToInt32(dr3["actual_quantity"]);
+                                string stag_id = dr3["tag_id"].ToString();
+                                string stag_id_ip = dr3["tag_id_ip"].ToString();
+                                string sLocator = dr3["locator"].ToString();
+                                DataModelDPS.DPSLayer3 layer3 = new DataModelDPS.DPSLayer3();
+                                layer3.line_id = iline_id; //行Id
+                                layer3.item_code = sitem_code;//物料编码
+                                layer3.flag = iflag;//状态标识,0代表未拣 1拣料已完成
+                                layer3.require_quantity = irequire_quantity;//需求数量
+                                layer3.actual_quantity = iactual_quantity;//实际拣货数量
+                                layer3.tag_id = stag_id;//标签地址
+                                layer3.tag_id_ip = stag_id_ip;//标签的IP地址
+                                layer3.isLight = 0;//初始状态为0,1为已经点亮
+                                layer3.locator = sLocator;//货位
+                                layer2.dps3.Add(layer3);
+                            }
+                            layer1.dps2.Add(layer2);
+                        }
+                    }
+                    //根据集合点亮订单显示器、巷道灯、标签
+                    LightTagObj(layer1);
+                }
+            }
+            catch(Exception ex)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}4][{1}]", sErrCode, ex.Message));
+            }
+        }
+        /// <summary>
+        /// 说明：第3步：把添加到集合中的对象，进行点亮操作
+        /// </summary>
+        /// <param name="dsplayer1"></param>
+        private void LightTagObj(DataModelDPS.DPSLayer1 dsplayer1)
+        {
+            lock (v5)
+            {
+                try
+                {
+                    ////1.首先点亮订单显示器
+                    //string sOrder_id = dsplayer1.order_id;
+                    //string sorder_id_ip = dsplayer1.order_id_ip;
+                    //if (sorder_id_ip.Trim().Length != 0 && sOrder_id.Trim().Length != 0)
+                    //{
+                    //    string sContent = dsplayer1.pick_order.Trim().PadLeft(11, '0');
+                    //    sContent = sContent.Substring(sContent.Length - 10, 10);//获取后面的10位数字
+                    //    RYB_PTL_API.RYB_PTL.RYB_PTL_DspOrderLED(sorder_id_ip, sOrder_id, sContent, 1);
+                    //}
+                    //2.点亮巷道灯
+                    foreach (DataModelDPS.DPSLayer2 dsplayer2 in dsplayer1.dps2)
+                    {
+                        string aisle_lamp_id = dsplayer2.aisle_lamp_id; //巷道灯地址
+                        string aisle_lamp_id_ip = dsplayer2.aisle_lamp_id_ip;//巷道灯对应的IP地址
+                        if (aisle_lamp_id.Trim().Length != 0 && aisle_lamp_id_ip.Trim().Length != 0)
+                        {
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(aisle_lamp_id_ip, aisle_lamp_id, 5, 1);
+                        }
+                        //3.点亮标签
+                        ArrayList alistTagLight = new ArrayList();// 控制一对多的情况，别重复点亮了。
+                        foreach (DataModelDPS.DPSLayer3 dsplayer3 in dsplayer2.dps3)
+                        {
+                            string tag_id = dsplayer3.tag_id; //标签地址
+                            string tag_id_ip = dsplayer3.tag_id_ip; //标签IP地址
+                            if (alistTagLight.Contains(tag_id))
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                //拣货时，不用考虑数量超过999的情况，只有盘点时才会考虑.
+                                int iNum = dsplayer3.require_quantity - dsplayer3.actual_quantity;
+                                if (bLocator)
+                                {
+                                    //显示货位
+                                    string sLocator = dsplayer3.locator.PadLeft(4, '0');
+                                    sLocator = sLocator.Substring(sLocator.Length - 2, 2);
+                                    RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit51(tag_id_ip, tag_id, iNum, 1, 2, sLocator);
+                                }
+                                else
+                                {
+                                    //不显示货位
+                                    RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(tag_id_ip, tag_id, iNum, 1, 2);
+                                }
+                                dsplayer3.isLight = 1;//已经被点亮过
+                                alistTagLight.Add(tag_id);
+                                LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, string.Format(string.Format("已经点亮标签.:[IP:{0}][Id:{1}][数量:{2}]", tag_id_ip, tag_id, iNum)));
+                            }
+                        }
+                    }
+                    //放入的泛型集合中
+                    
+                    listDataModel.Add(dsplayer1);
+
+                }
+                catch (Exception ex)
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}5][{1}]", sErrCode, ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// 说明:处理从标签返回后拍灭值
+        /// </summary>
+        /// <param name="sIp"></param>
+        /// <param name="sTagId"></param>
+        /// <param name="sKeyCode"></param>
+        /// <param name="sLocator"></param>
+        /// <param name="sValue"></param>
+        private void DosKeyValueFromTag(string sIp, string sTagId, string sKeyCode, string sLocator, string sValue)
+        {
+            try
+            {
+                /* 1.拍灭标签后,在集合中查找已经亮灯的此标签。
+                 * 2.判断亮灯模式是一次还是递减模式，更新数据库的数量要么是1，要么是sValue 值
+                 * 3.如果是递减模式，继续发亮次标签。如果发送的次数已够，进入第4步
+                 * 4.查找是否还需要继续亮此标签（一对多的情况），如果没有移除集合
+                 * 5.判断巷道灯下的标签是否已经全部被拍灭（集合是否为0），最后一个标签显示end
+                 */
+                foreach (DataModelDPS.DPSLayer1 dy1 in listDataModel)
+                {
+                    foreach (DataModelDPS.DPSLayer2 dy2 in dy1.dps2)
+                    {
+                        DataModelDPS.DPSLayer3 dy3 = dy2.dps3.Find(x => (x.tag_id_ip == sIp) && (x.tag_id == sTagId) && (x.isLight == 1));
+                        if (dy3 != null)
+                        {
+                            //递减的模式
+                            if (bLightModel)
+                            {
+                                int iNum = Convert.ToInt32(sValue) - 1;
+                                dy3.actual_quantity = dy3.actual_quantity + 1;
+                                string sLtr = dy3.locator.PadLeft(4, '0');
+                                sLtr = sLtr.Substring(sLtr.Length - 2, 2);
+                                string sErrMsg = string.Empty;
+                                //更新数据到数据库
+                                UpdatePickLine(dy3.line_id, 1, out sErrMsg);
+                                updateDataGridView(dy3.line_id,1);
+                                if (sErrMsg.Trim().Length > 0)
+                                {
+                                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("拍灭更新数据异常:[{0}8][{1}]", sErrCode, sErrMsg));
+                                }
+                                if (iNum > 0)
+                                {
+                                    if (bLocator)
+                                    {
+                                        //显示货位
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum, 1, 2, sLtr);
+                                    }
+                                    else
+                                    {
+                                        //不显示货位
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum, 1, 2);
+                                    }
+                                }
+                                else
+                                {
+                                    //把此标签从集合中移除,判断是否是最后一个标签
+                                   
+                                    dy2.dps3.Remove(dy3);
+                                    if (dy2.dps3.Count == 0)
+                                    {
+                                        //发送End指令
+                                        dy2.tag_id_End = sTagId;
+                                        dy2.tag_id_ip_End = sIp;
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(dy2.aisle_lamp_id_ip, dy2.aisle_lamp_id, 5, 0);
+                                        //RYB_PTL_API.RYB_PTL.RYB_PTL_SetMode(sIp, sTagId, 6);
+                                        return;
+                                    }
+                                    //查找此标签是否还有其他需要亮灯（一对多的情况）
+                                    DataModelDPS.DPSLayer3 dy4 = dy2.dps3.Find(x => x.tag_id_ip == sIp && x.tag_id == sTagId && x.isLight == 0);
+                                    if (dy4 != null)
+                                    {
+                                        string sLocator4 = dy4.locator.PadLeft(4, '0');
+                                        sLocator4 = sLocator4.Substring(sLocator4.Length - 2, 2);
+                                        int iNum4 = dy4.require_quantity - dy4.actual_quantity;
+                                        dy4.isLight = 1;//已经被点亮了
+                                        if (bLocator)
+                                        {
+                                            //显示货位
+                                            RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum4, 1, 2, sLocator4);
+                                        }
+                                        else
+                                        {
+                                            //不显示货位
+                                            RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum4, 1, 2);
+                                        }
+                                    }
+
+                                }
+                            }
+                            //一次拍灭即灭的模式
+                            else
+                            {
+                                dy3.actual_quantity = Convert.ToInt32(sValue);
+                                //更新数据到数据库
+                                string sErrMsg = string.Empty;
+                                UpdatePickLine(dy3.line_id, dy3.actual_quantity, out sErrMsg);
+                                updateDataGridView(dy3.line_id, dy3.actual_quantity);
+                                if (sErrMsg.Trim().Length > 0)
+                                {
+                                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("拍灭更新数据异常:[{0}8][{1}]", sErrCode, sErrMsg));
+                                }
+                                dy2.dps3.Remove(dy3);
+                                if (dy2.dps3.Count == 0)
+                                {
+                                    //发送End指令
+                                    dy2.tag_id_End = sTagId;
+                                    dy2.tag_id_ip_End = sIp;
+                                    RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(dy2.aisle_lamp_id_ip, dy2.aisle_lamp_id, 5, 0);
+                                    //RYB_PTL_API.RYB_PTL.RYB_PTL_SetMode(sIp, sTagId, 6);
+                                    if (dy1.finisher_id_ip.Trim().Length != 0 && dy1.finisher_id.Trim().Length != 0)
+                                    {
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_PlayFinish2(dy1.finisher_id_ip, dy1.finisher_id, 2);
+                                    }
+                                    return;
+                                }
+
+                                //查找此标签是否还有其他需要亮灯（一对多的情况）
+                                DataModelDPS.DPSLayer3 dy4 = dy2.dps3.Find(x => x.tag_id_ip == sIp && x.tag_id == sTagId && x.isLight == 0);
+                                if (dy4 != null)
+                                {
+                                    string sLocator4 = dy4.locator.PadLeft(4, '0');
+                                    sLocator4 = sLocator4.Substring(sLocator4.Length - 2, 2);
+                                    int iNum4 = dy4.require_quantity - dy4.actual_quantity;
+                                    dy4.isLight = 1;//已经被点亮了
+                                    if (bLocator)
+                                    {
+                                        //显示货位
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum4, 1, 2, sLocator4);
+                                    }
+                                    else
+                                    {
+                                        //不显示货位
+                                        RYB_PTL_API.RYB_PTL.RYB_PTL_DspDigit5(sIp, sTagId, iNum4, 1, 2);
+                                    }
+                                }
+                            }
+                            return;
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}6][{1}]", sErrCode, ex.Message));
+            }
+        }
+
+        /// <summary>
+        /// 说明:拍灭标签提交
+        /// </summary>
+        /// <param name="LineId"></param>
+        /// <param name="iPickQty"></param>
+        /// <param name="sMsg"></param>
+        private void UpdatePickLine(int LineId,int iPickQty,out string sMsg)
+        {
+            sMsg = string.Empty;
+            try
+            {
+                string sSql = string.Format("update t_pick_line  set actual_quantity = actual_quantity + {0},last_update_by = '{1}' where line_id = {2}", iPickQty, mysUser, LineId);
+                myShd.ExecutCmd(sSql, out sMsg);
+
+              
+            }
+            catch (Exception ex)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}7][{1}]", sErrCode, ex.Message));
+            }
+        }
+        private delegate void delegateupdateDataGridView(int LineId, int iQty);
+        private void updateDataGridView(int LineId,int iQty)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new delegateupdateDataGridView(updateDataGridView), new object[] { LineId, iQty });
+            }
+            else
+            {
+                try
+                {
+                    for (int i = 0; i < dataGridViewX1.Rows.Count; i++)
+                    {
+                        int ld = Convert.ToInt32(dataGridViewX1.Rows[i].Cells["line_id"].Value);
+                        if (ld == LineId)
+                        {
+                            int iOldAutualQty = Convert.ToInt32(dataGridViewX1.Rows[i].Cells["actual_quantity"].Value);
+                            int iReqQty = Convert.ToInt32(dataGridViewX1.Rows[i].Cells["require_quantity"].Value);
+                            dataGridViewX1.Rows[i].Cells["actual_quantity"].Value = iOldAutualQty + iQty;
+                            if (iReqQty == iOldAutualQty + iQty)
+                            {
+                                dataGridViewX1.Rows.RemoveAt(i);
+                                dataGridViewX1.Refresh();
+                                lblCount.Text = dataGridViewX1.Rows.Count.ToString();
+                            }
+                            break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}8][{1}]", sErrCode, ex.Message));
+                }
+            }
+        }
+
+        /// <summary>
+        /// 说明:处理拍灭End后的标签处理
+        /// </summary>
+        /// <param name="sIp"></param>
+        /// <param name="sTagId"></param>
+        /// <param name="sKeyCode"></param>
+        /// <param name="sLocator"></param>
+        /// <param name="sValue"></param>
+        private void DosKeyValueFromEnd(string sIp, string sTagId, string sKeyCode, string sLocator, string sValue)
+        {
+            try
+            {
+                /* 1.从集合中查找对应的最后一个标签
+                 * 2.根据此标签，灭掉巷道灯,灭订单显示器，播放音乐完成器
+                 * 3.更新数据库中行表的状态
+                 * 4.移除集合
+                 */
+                foreach (DataModelDPS.DPSLayer1 dy1 in listDataModel)
+                {
+                    DataModelDPS.DPSLayer2 dy2 = dy1.dps2.Find(x => x.tag_id_End == sTagId && x.tag_id_ip_End == sIp);
+                    if (dy2 != null)
+                    {
+                        string sAileId = dy2.aisle_lamp_id;
+                        string sAileIP = dy2.aisle_lamp_id_ip;
+                        RYB_PTL_API.RYB_PTL.RYB_PTL_AisleLamp(sAileIP, sAileId, 5, 0);//熄灭巷道灯
+
+                        string sOrderId = dy1.order_id;
+                        string sOrderIp = dy1.order_id_ip;
+                        RYB_PTL_API.RYB_PTL.RYB_PTL_DspOrderLED(sOrderIp, sOrderId, "----------", 1);
+                        listDataModel.Remove(dy1);
+                        //灭音乐完成器
+                        if (dy1.finisher_id_ip.Trim().Length > 0 && dy1.finisher_id.Trim().Length > 0)
+                        {
+                            RYB_PTL_API.RYB_PTL.RYB_PTL_CloseDigit5(dy1.finisher_id_ip, dy1.finisher_id);
+                        }
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("异常:[{0}9][{1}]", sErrCode, ex.Message));
+            }
+        }
+        /// <summary>
+        /// 防止跨线程操作，直接赋值给TextBox文本框
+        /// </summary>
+        /// <param name="s"></param>
+        private delegate void delegateDisplayTxtBoxScanBarcode(DevComponents.DotNetBar.Controls.TextBoxX tx,string s);
+        private void DisplayTxtBoxScanBarcode(DevComponents.DotNetBar.Controls.TextBoxX tx,string s)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new delegateDisplayTxtBoxScanBarcode(DisplayTxtBoxScanBarcode), new object[] {tx,s });
+            }
+            else
+            {
+                tx.Text = s;
+            }
+        }
+
+       
+         /// <summary>
+        ///  防止跨线程操作，把数据赋值给DataGridView
+       /// </summary>
+       /// <param name="db"></param>
+        private delegate void delegateDisplayDataGridView(DataTable db);
+        private void DisplayDataGridView(DataTable db)
+        {
+           if(this.InvokeRequired)
+           {
+               this.BeginInvoke(new delegateDisplayDataGridView(DisplayDataGridView),new object[]{db});
+           }
+           else
+           {
+               this.dataGridViewX1.DataSource = null;
+               this.dataGridViewX1.DataSource = db;
+               this.lblCount.Text = this.dataGridViewX1.Rows.Count.ToString();
+           }
+        }
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            RYB_PTL_API.RYB_PTL.UserResultAvailable -= new RYB_PTL_API.RYB_PTL.UserResultAvailableEventHandler(ptl_UserResultAvailable);
+            this.Close();
+            this.Dispose();
+        }
+        private void dataGridViewX1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            int rownum = (e.RowIndex + 1);
+            System.Drawing.Rectangle rct = new System.Drawing.Rectangle(e.RowBounds.Location.X, e.RowBounds.Location.Y + 4, ((DataGridView)sender).RowHeadersWidth - 4, e.RowBounds.Height);
+            TextRenderer.DrawText(e.Graphics, rownum.ToString(), ((DataGridView)sender).RowHeadersDefaultCellStyle.Font, rct, ((DataGridView)sender).RowHeadersDefaultCellStyle.ForeColor, System.Drawing.Color.Transparent, TextFormatFlags.HorizontalCenter);
+        }
+
+        private void FrmDPS_Load(object sender, EventArgs e)
+        {
+            //加载已配置的文件
+            LoadSetting();
+
+            //加载SQL语句
+            if (cfgsql["sql"].Trim().Length == 0)
+            {
+                cfgsql["sql"] = base64.StringToBase64string(sQueryDataByPickOrder);
+            }
+            else
+            {
+                sQueryDataByPickOrder = base64.Base64StringTostring(cfgsql["sql"]);
+            }
+        }
+        private void LoadSetting()
+        {
+            //作业模式
+            if (mycfg["OperateModel"] == "Order")
+            {
+                bOperateModel = true;//按订单
+                lblTaskType.Text = "逐单拣选模式";
+
+            }
+            else
+            {
+                bOperateModel = false;//按区域作业
+                lblTaskType.Text = "分区拣选模式";
+
+            }
+
+            //亮灯模式
+            if (mycfg["Light"] == "2to1")
+            {
+                bLightModel = true;//递减的拍灭模式
+                lblLightType.Text = "拍灭数量递减模式";
+            }
+            else
+            {
+                bLightModel = false;//一次拍灭
+                lblLightType.Text = "一次拍灯即灭";
+            }
+            //是否允许加箱
+            if (mycfg["AddBox"] == "1")
+            {
+                bAddBox = true;//允许加箱
+            }
+            else
+            {
+                bAddBox = false;//不允许加箱
+            }
+            //挂起任务
+            if (mycfg["Pending"].Trim().Length == 0)
+            {
+                sPendingBarcode = string.Empty;
+            }
+            else
+            {
+                sPendingBarcode = mycfg["Pending"];
+            }
+            //是否显示货位的前2位
+            if (mycfg["Locator"] == "1")
+            {
+                bLocator = true;
+                lblDspType.Text = "显示货位";
+            }
+            else
+            {
+                bLocator = false;
+                lblDspType.Text = "不显示货位";
+            }
+        }
+        string sQueryDataByPickOrder = @"select h.head_id,
+                                               l.line_id,
+                                               h.pick_order,
+                                               h.box_no,
+                                               h.status,
+                                               l.item_code,
+                                               l.item_desc,
+                                               l.pick_user,
+                                               l.flag,
+                                               l.require_quantity,
+                                               l.actual_quantity,
+                                               l.item_unit,
+                                               r.region_no,
+                                               r.com_id,
+                                               r.com_id_ip,
+                                               r.finisher_id,
+                                               r.finisher_id_ip,
+                                               r.order_id,
+                                               r.order_id_ip,
+                                               r.aisle_lamp_id,
+                                               r.aisle_lamp_id_ip,
+                                               r.tag_id,
+                                               r.tag_id_ip,
+											   r.locator
+                                          from t_pick_head h, t_pick_line l, t_tag_locator r
+                                         where h.head_id = l.head_id
+                                           and l.locator = r.locator
+                                           and h.pick_order = '{0}'
+                                           and r.com_id = '{1}'
+                                           and h.status <>2";
+
+        private void dataGridViewX1_RowPostPaint_1(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            int rownum = (e.RowIndex + 1);
+            System.Drawing.Rectangle rct = new System.Drawing.Rectangle(e.RowBounds.Location.X, e.RowBounds.Location.Y + 4, ((DataGridView)sender).RowHeadersWidth - 4, e.RowBounds.Height);
+            TextRenderer.DrawText(e.Graphics, rownum.ToString(), ((DataGridView)sender).RowHeadersDefaultCellStyle.Font, rct, ((DataGridView)sender).RowHeadersDefaultCellStyle.ForeColor, System.Drawing.Color.Transparent, TextFormatFlags.HorizontalCenter);
+        }
+
+        private void DFrmDPS_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RYB_PTL_API.RYB_PTL.UserResultAvailable -= new RYB_PTL_API.RYB_PTL.UserResultAvailableEventHandler(ptl_UserResultAvailable);
+            LogRichBox.LogRichBox.DoLogRichBox(Color.Black, FontStyle.Bold, 10, "[FrmDPS.dll][已经关闭!]");
+        }
+    }
+}

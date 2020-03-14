@@ -1,0 +1,146 @@
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\FM007-WinUI.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\BLL.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DAL.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DevComponents.DotNetBar2.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllCore.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllEventLogDataBase.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllEventLogFile.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllPTLControlLib.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllUcShowWnDThread.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\iFormControls.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\LogRichBox.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\ocxLoginFrm.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Core.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Data.DataSetExtensions.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Data.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Data.OracleClient.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Design.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Drawing.Design.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Drawing.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Windows.Forms.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\System.Xml.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\xFindCtrIp.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\xFindCtrIp.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllEventLogDataBase.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmAutoCheckTag.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllCore.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllPTLControlLib.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllEventLogFile.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllUcShowWnDThread.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmSelfTest.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\BLL.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\ocxLoginFrm.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\LogRichBox.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib\WinFrmUI\obj\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllExcelImportAndExport.dll
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmSetMenu.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\dllExcelImportAndExport.pdb
+E:\2016-Code\PTLControlLib\WinFrmUI\bin\Debug\DFrmInitialData.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\BLL.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DAL.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DevComponents.DotNetBar2.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllCore.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllEventLogDataBase.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllEventLogFile.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllPTLControlLib.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllUcShowWnDThread.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\iFormControls.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\LogRichBox.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\ocxLoginFrm.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Core.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Data.DataSetExtensions.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Data.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Data.OracleClient.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Design.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Drawing.Design.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Drawing.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Windows.Forms.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\System.Xml.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\xFindCtrIp.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllExcelImportAndExport.dll
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\xFindCtrIp.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllEventLogDataBase.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmAutoCheckTag.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllCore.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllPTLControlLib.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllEventLogFile.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\ocxLoginFrm.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllUcShowWnDThread.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmSetMenu.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmSelfTest.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\BLL.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\dllExcelImportAndExport.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\LogRichBox.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\bin\Debug\DFrmInitialData.pdb
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\2016-Code\PTLControlLib - 副本\WinFrmUI\obj\Debug\FM007-WinUI.csproj.GenerateResource.Cache
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\WinUI.exe
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\WinUI.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\BLL.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\DAL.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\DevComponents.DotNetBar2.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllChart.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllConfigApp.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllConvertBase64.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllCore.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllEventLogDataBase.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllEventLogFile.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllExcelImportAndExport.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllPTLControlLib.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllUcShowWnDThread.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\iFormControls.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\LogRichBox.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\ocxLoginFrm.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Core.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Data.DataSetExtensions.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Data.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Data.OracleClient.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Design.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Drawing.Design.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Drawing.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Windows.Forms.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\System.Xml.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dotnetCHARTING.WinForms.dll
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllConvertBase64.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllEventLogDataBase.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllChart.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllCore.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllPTLControlLib.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllEventLogFile.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllUcShowWnDThread.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllConfigApp.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\DAL.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\BLL.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\dllExcelImportAndExport.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\ocxLoginFrm.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\bin\Debug\LogRichBox.pdb
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\ResolveAssemblyReference.cache
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\WinUI.FrmLogin.resources
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\WinUI.FrmMain.resources
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\WinUI.Properties.Resources.resources
+E:\2016-Code\PTLControlLib-Mine\WinFrmUI\obj\Debug\FM007-WinUI.csproj.GenerateResource.Cache

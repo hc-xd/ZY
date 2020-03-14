@@ -1,0 +1,18 @@
+2019/7/6 13:48:58 :[FrmDPS.dll][已经成功加载!]
+2019/7/6 13:48:58 :LoadRegionTable 加载基础数据出错：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:00 :RefreshPick 亮灯刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:01 :Refresh 刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:03 :RefreshPick 亮灯刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:08 :[FrmDPS.dll][已经关闭!]
+2019/7/6 13:49:29 :[FrmSelftTest][已成功加载!]
+2019/7/6 13:49:29 :Refresh 刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:29 :RefreshPick 亮灯刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:29 :RefreshPick 亮灯刷新数据失败：异常:[错误代码:DA001132][ORA-12154: TNS:could not resolve the connect identifier specified
+]
+2019/7/6 13:49:31 :[FrmSelftTestTag][已经关闭!]

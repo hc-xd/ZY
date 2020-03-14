@@ -1,0 +1,216 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Diagnostics;
+
+namespace NFrmImportLocatorAndTagRelation
+{
+    public partial class DFrmImportLocatorAndTagRelation : Form
+    {
+        private const string sErrCode = "错误代码:DFrmImportLocatorAndTagRelation";
+        DAL.SQLHelpDataBase myShd;
+        dllConfigApp.ConfigApp mycfg;
+        string mysUser = string.Empty;
+        dllExcelImportAndExport.ExcelImportAndExport impExcel = new dllExcelImportAndExport.ExcelImportAndExport();
+        string sMsg = string.Empty;
+        public DFrmImportLocatorAndTagRelation(string sUser, dllConfigApp.ConfigApp cfg, DAL.SQLHelpDataBase shd)
+        {
+            InitializeComponent();
+            mysUser = sUser;
+            mycfg = cfg;
+            myShd = shd;
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Excel|*.xlsx|Excel|*.xls|所有文件|*.*";
+            DialogResult dr = openFileDialog1.ShowDialog();
+            openFileDialog1.RestoreDirectory = true;
+            textBox1.Text = openFileDialog1.FileName;
+            if (!System.IO.File.Exists(openFileDialog1.FileName))
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "选定的文件不存在.");
+            }
+            else
+            {
+                ImportExcelTagLocatorToDataBase(this.dataGridViewX1, openFileDialog1.FileName);
+            }
+        }
+        /// <summary>
+        /// 说明：把数据导入到数据库中
+        /// </summary>
+        /// <param name="sPathFile"></param>
+        private void ImportExcelTagLocatorToDataBase(DevComponents.DotNetBar.Controls.DataGridViewX dvx1, string sPathFile)
+        {
+            string sMsg = string.Empty;
+            DataSet ds = impExcel.ExcelToDS(sPathFile, out sMsg);
+            if (sMsg.Trim().Length != 0)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, sMsg);
+            }
+            else
+            {
+                lblTotal.Text = ds.Tables[0].Rows.Count.ToString();//合计的总数
+                if (ds.Tables.Count > 0)
+                {
+                    dvx1.DataSource = ds.Tables[0];
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Blue, FontStyle.Bold, 10, "查询成功。");
+                    for (int i = 0; i < dvx1.Rows.Count; i++)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            dvx1.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+                        }
+                    }
+                }
+                else
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "Excel中没有任何数据.");
+                }
+            }
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            lblOK.Text = "0";
+            lblFail.Text = "0";
+            if (dataGridViewX1.Rows.Count == 0)
+            {
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, "没有任何数据可以导入.");
+            }
+            else
+            {
+
+                dllUcShowWnDThread.UcShowWnDThread uc = new dllUcShowWnDThread.UcShowWnDThread("正在处理，请稍后……", null);
+                uc.DoWork = delegate
+                {
+                    for (int i = 0; i < this.dataGridViewX1.Rows.Count; i++)
+                    {
+
+                        string sREGION_NO = this.dataGridViewX1.Rows[i].Cells["REGION_NO"].Value.ToString();
+                        string sCOM_ID = this.dataGridViewX1.Rows[i].Cells["COM_ID"].Value.ToString();
+                        string sCOM_ID_IP = this.dataGridViewX1.Rows[i].Cells["COM_ID_IP"].Value.ToString();
+                        string sFINISHER_ID = this.dataGridViewX1.Rows[i].Cells["FINISHER_ID"].Value.ToString();
+                        string sFINISHER_ID_IP = this.dataGridViewX1.Rows[i].Cells["FINISHER_ID_IP"].Value.ToString();
+                        string sORDER_ID = this.dataGridViewX1.Rows[i].Cells["ORDER_ID"].Value.ToString();
+                        string sORDER_ID_IP = this.dataGridViewX1.Rows[i].Cells["ORDER_ID_IP"].Value.ToString();
+                        string sAISLE_LAMP_ID = this.dataGridViewX1.Rows[i].Cells["AISLE_LAMP_ID"].Value.ToString();
+                        string sAISLE_LAMP_ID_IP = this.dataGridViewX1.Rows[i].Cells["AISLE_LAMP_ID_IP"].Value.ToString();
+                        string sTAG_ID = this.dataGridViewX1.Rows[i].Cells["TAG_ID"].Value.ToString();
+                        string sTAG_ID_IP = this.dataGridViewX1.Rows[i].Cells["TAG_ID_IP"].Value.ToString();
+                        string sLOCATOR = this.dataGridViewX1.Rows[i].Cells["LOCATOR"].Value.ToString();
+                        ForeachInsertData(i, sREGION_NO, sCOM_ID, sCOM_ID_IP, sFINISHER_ID, sFINISHER_ID_IP, sORDER_ID,
+                                            sORDER_ID_IP, sAISLE_LAMP_ID, sAISLE_LAMP_ID_IP, sTAG_ID, sTAG_ID_IP, sLOCATOR);
+
+                    }
+                };
+                uc.RunAndShow();
+            }
+            this.dataGridViewX1.DataSource = null;
+        }
+        private delegate void deleForeachInsertData(int i, string REGION_NO, string COM_ID, string COM_ID_IP, string FINISHER_ID, string FINISHER_ID_IP, string ORDER_ID,
+                                      string ORDER_ID_IP, string AISLE_LAMP_ID, string AISLE_LAMP_ID_IP, string TAG_ID, string TAG_ID_IP, string LOCATOR);
+        private void ForeachInsertData(int i, string REGION_NO, string COM_ID, string COM_ID_IP, string FINISHER_ID, string FINISHER_ID_IP, string ORDER_ID,
+                                       string ORDER_ID_IP, string AISLE_LAMP_ID, string AISLE_LAMP_ID_IP, string TAG_ID, string TAG_ID_IP, string LOCATOR)
+        {
+            try
+            {
+                System.Windows.Forms.Application.DoEvents();
+                string sSQL = string.Empty;
+                //先查找一次对应的货位是否存在
+                sSQL = string.Format("select LOCATOR from T_TAG_LOCATOR where  LOCATOR = '{0}'", LOCATOR);
+                DataSet dsCheck = myShd.ExecuteSql(sSQL);
+                if (dsCheck != null && dsCheck.Tables.Count > 0)
+                {
+                    if (dsCheck.Tables[0].Rows.Count > 0)
+                    {
+                        LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("货位:{0} 已经存在.", LOCATOR));
+                        //删除记录
+                        sSQL = string.Format("delete from T_TAG_LOCATOR where  LOCATOR = '{0}'", LOCATOR);
+                        if (myShd.ExecutCmd(sSQL, out sMsg))
+                        {
+                            LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, string.Format("删除货位:{0} {1}.", LOCATOR, "成功"));
+                        }
+                        else
+                        {
+                            LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, string.Format("货位:{0} {1}.", LOCATOR, sMsg));
+                            HandleLabel(0);
+                            dataGridViewX1.Rows[i].DefaultCellStyle.BackColor = Color.Red;//标识为红色
+                            return;
+                        }
+                    }
+                }
+                //插入数据
+                sSQL = string.Format(@"insert into T_TAG_LOCATOR(REGION_NO,COM_ID,COM_ID_IP,FINISHER_ID,FINISHER_ID_IP,ORDER_ID,ORDER_ID_IP,AISLE_LAMP_ID,AISLE_LAMP_ID_IP,TAG_ID,TAG_ID_IP,LOCATOR)
+                           values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')", REGION_NO, COM_ID, COM_ID_IP, FINISHER_ID, FINISHER_ID_IP, ORDER_ID,
+                                            ORDER_ID_IP, AISLE_LAMP_ID, AISLE_LAMP_ID_IP, TAG_ID, TAG_ID_IP, LOCATOR);
+                if (myShd.ExecutCmd(sSQL, out sMsg))
+                {
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, string.Format("货位:{0},导入成功", LOCATOR));
+                    dataGridViewX1.Rows[i].DefaultCellStyle.BackColor = Color.Green;//标识为红色
+                    HandleLabel(1);
+                }
+                else
+                {
+                    sMsg = string.Format("{0}1-{1}", sErrCode, sMsg);
+                    LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, sMsg);
+                    dataGridViewX1.Rows[i].DefaultCellStyle.BackColor = Color.Red;//标识为红色
+                    HandleLabel(0);
+                }
+            }
+            catch (Exception ex)
+            {
+                string sMsg = string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Red, FontStyle.Bold, 10, sMsg);
+                dataGridViewX1.Rows[i].DefaultCellStyle.BackColor = Color.Red;//标识为红色
+            }
+        }
+        private delegate void delegateHandleLabel(int i);
+        private void HandleLabel(int i)
+        {
+            if (this.InvokeRequired)
+            {
+                this.BeginInvoke(new delegateHandleLabel(HandleLabel), new object[] { i });
+            }
+            else
+            {
+                if (i == 1)
+                {
+                    this.lblOK.Text = Convert.ToString(Convert.ToInt32(lblOK.Text) + 1);
+                }
+                else
+                {
+                    this.lblFail.Text = Convert.ToString(Convert.ToInt32(lblFail.Text) + 1);
+                }
+            }
+        }
+        private void btnExportTemplate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sSql = "select REGION_NO,COM_ID,COM_ID_IP,FINISHER_ID,FINISHER_ID_IP,ORDER_ID,ORDER_ID_IP,AISLE_LAMP_ID,AISLE_LAMP_ID_IP,TAG_ID,TAG_ID_IP,LOCATOR from T_TAG_LOCATOR order by TAG_ID asc";
+                DataSet dsQuery = myShd.ExecuteSql(sSql);
+                impExcel.DataTableToExcel(dsQuery.Tables[0]);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, "数据导出成功!");
+            }
+            catch (Exception ex)
+            {
+                string sMsg = string.Format("异常:[{0}{1}][{2}]", sErrCode, new StackTrace(new StackFrame(true)).GetFrame(0).GetFileLineNumber(), ex.Message);
+                LogRichBox.LogRichBox.DoLogRichBox(Color.Green, FontStyle.Bold, 10, sMsg);
+            }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            impExcel.KillExcel();
+            LogRichBox.LogRichBox.DoLogRichBox(Color.Black, FontStyle.Bold, 10, "[frmCreateDataTable][已经关闭!]");
+            this.Close();
+            this.Dispose();
+        }
+    }
+}

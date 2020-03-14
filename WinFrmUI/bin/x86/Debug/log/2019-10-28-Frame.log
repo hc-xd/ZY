@@ -1,0 +1,49 @@
+2019/10/28 11:31:04 :【主控】[线程初始化完成.]
+2019/10/28 11:31:04 :控制器：192.168.1.10无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.11无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.12无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.13无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.14无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.15无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.16无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.17无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.18无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.19无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.20无法ping通，请检查网络!
+2019/10/28 11:31:04 :控制器：192.168.1.21无法ping通，请检查网络!
+2019/10/28 11:33:18 :错误代码:DFrmImportLocatorAndTagRelation1-
+2019/10/28 11:42:13 :异常：System.IndexOutOfRangeException: 无法找到列 9。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   在 operateExcel.Class1.ExcelToDatatable(String excelFilePath, String& sheetName, String& errorMsg) 位置 E:\项目文件\dll\opearateExcel_dll\operateExcel\operateExcel\Class1.cs:行号 84
+2019/10/28 11:42:51 :异常：System.IndexOutOfRangeException: 无法找到列 9。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   在 operateExcel.Class1.ExcelToDatatable(String excelFilePath, String& sheetName, String& errorMsg) 位置 E:\项目文件\dll\opearateExcel_dll\operateExcel\operateExcel\Class1.cs:行号 84
+2019/10/28 11:43:45 :异常：System.IndexOutOfRangeException: 无法找到列 9。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   在 operateExcel.Class1.ExcelToDatatable(String excelFilePath, String& sheetName, String& errorMsg) 位置 E:\项目文件\dll\opearateExcel_dll\operateExcel\operateExcel\Class1.cs:行号 84
+2019/10/28 11:44:06 :异常：System.IndexOutOfRangeException: 无法找到列 9。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   在 operateExcel.Class1.ExcelToDatatable(String excelFilePath, String& sheetName, String& errorMsg) 位置 E:\项目文件\dll\opearateExcel_dll\operateExcel\operateExcel\Class1.cs:行号 84
+2019/10/28 11:44:44 :异常：System.IndexOutOfRangeException: 无法找到列 9。
+   在 System.Data.DataColumnCollection.get_Item(Int32 index)
+   在 System.Data.DataRow.set_Item(Int32 columnIndex, Object value)
+   在 operateExcel.Class1.ExcelToDatatable(String excelFilePath, String& sheetName, String& errorMsg) 位置 E:\项目文件\dll\opearateExcel_dll\operateExcel\operateExcel\Class1.cs:行号 84
+2019/10/28 11:49:09 :【主控】[线程初始化完成.]
+2019/10/28 11:49:09 :控制器：192.168.1.10无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.11无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.12无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.13无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.14无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.15无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.16无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.17无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.18无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.19无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.20无法ping通，请检查网络!
+2019/10/28 11:49:09 :控制器：192.168.1.21无法ping通，请检查网络!
+2019/10/28 11:55:36 :[FrmDPS.dll][已经成功加载!]
+2019/10/28 13:01:28 :[FrmDPS.dll][已经关闭!]
